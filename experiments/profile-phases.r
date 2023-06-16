@@ -20,7 +20,11 @@ profile_dir <- if (length(args) < 2) {
 
 rfiles_dir <- args[[1]]
 
-harness <- if (length(args) >= 3) { args[[3]] } else {""}
+harness <- if (length(args) >= 3) {
+    args[[3]]
+} else {
+    ""
+}
 
 r_dir <- Sys.getenv("R_DIR", unset = "../build/bin")
 
@@ -35,7 +39,7 @@ get_metrics <- function(rfile_path) {
 }
 
 
-process_profile <- function(rfile_path, profile_dir, with_harness=FALSE) {
+process_profile <- function(rfile_path, profile_dir, with_harness = FALSE) {
     current_dir <- getwd()
 
     cat("Profile ", rfile_path, " in ", current_dir, " with profile to be written in ", profile_dir, "with_harness=", with_harness, "\n")
@@ -45,17 +49,21 @@ process_profile <- function(rfile_path, profile_dir, with_harness=FALSE) {
 
     r_path <- file.path(r_dir, "R")
 
-    rfile_name <- if(with_harness) { basename(tools::file_path_sans_ext(rfile_path)) } else {basename(rfile_path)}
+    rfile_name <- if (with_harness) {
+        basename(tools::file_path_sans_ext(rfile_path))
+    } else {
+        basename(rfile_path)
+    }
 
     # We set the current dir to where the R file is
     # in order for files it imports to be relative to it
     setwd(dirname(rfile_path))
 
     args <- if (with_harness) {
-            c("-q", "-f harness.r", paste0("--args ", rfile_name, " 100 10"))
-        } else {
-            c("-q", paste0("-f ", rfile_name)) 
-        }
+        c("-q", "-f harness.r", paste0("--args ", rfile_name, " 100 10"))
+    } else {
+        c("-q", paste0("-f ", rfile_name))
+    }
     res <- system2(r_path, args,
         stdout = FALSE,
         env = c(
@@ -108,9 +116,13 @@ process_profile <- function(rfile_path, profile_dir, with_harness=FALSE) {
     df
 }
 
-extracted <- map_if(rfiles_path, function(rfile) {basename(rfile) != "harness.r"}, process_profile, profile_dir, harness != "", .progress = TRUE)
+extracted <- map(discard(rfiles_path, function(rfile) {
+    basename(rfile) == "harness.r"
+}), process_profile, profile_dir, harness != "", .progress = TRUE)
+
+print(extracted)
 
 profiles <- bind_rows(extracted)
 
 
-write_csv(profiles, "profiles.csv")
+write_csv(profiles, file.path(profile_dir, "profiles.csv"))
