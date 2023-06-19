@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(readr)
 library(stringr)
+library(ggplot2)
+library(forcats)
 
 here::i_am("analysis/perf-phases.Rmd")
 
@@ -26,10 +28,18 @@ profiles <- read_csv(here("artifacts/results/benchmark_dir-profiles/profiles.csv
 ## Basic analysis
 
 ```{r}
-mean_pc <- summarize(profiles, across(ends_with("-pc"), mean))
-unlist(mean_pc) %>% sort(decreasing=TRUE) %>% 
+mean_pc <- summarize(profiles, across(ends_with("-pc"), mean)) %>% unlist %>%
+sort(decreasing=TRUE) %>% 
   tibble::enframe(name = "Phase", value = "AvgPc") %>%
-  mutate(Phase = str_extract(Phase, "([^-])*")) %>% # remove the ugly -pc suffix
-  knitr::kable(digits = 1)
+  mutate(Phase = str_extract(Phase, "([^-])*"))  # remove the ugly -pc suffix
+mean_pc %>%  knitr::kable(digits = 1)
+```
+
+
+```{r, fig.width=8, fig.height=9}
+ggplot(mean_pc) +
+  geom_col(aes(x=fct_reorder(Phase, AvgPc), y=AvgPc)) +
+  coord_flip() +
+  labs(y="%")
 ```
 
