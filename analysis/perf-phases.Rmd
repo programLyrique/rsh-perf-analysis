@@ -1,0 +1,35 @@
+---
+title: "Performance phases"
+author: "Pierre Donat-Bouillud"
+date: "2023-06-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(readr)
+library(stringr)
+
+here::i_am("analysis/perf-phases.Rmd")
+
+library(here)
+```
+
+## Data loading
+
+```{r}
+profiles <- read_csv(here("artifacts/results/benchmark_dir-profiles/profiles.csv"))
+```
+
+## Basic analysis
+
+```{r}
+mean_pc <- summarize(profiles, across(ends_with("-pc"), mean))
+unlist(mean_pc) %>% sort(decreasing=TRUE) %>% 
+  tibble::enframe(name = "Phase", value = "AvgPc") %>%
+  mutate(Phase = str_extract(Phase, "([^-])*")) %>% # remove the ugly -pc suffix
+  knitr::kable(digits = 1)
+```
+
