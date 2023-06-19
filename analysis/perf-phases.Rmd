@@ -43,3 +43,17 @@ ggplot(mean_pc) +
   labs(y="%")
 ```
 
+## Weighted rank aggregation
+
+
+Let's do it more correctly using [weighted rank aggregation](https://cran.r-project.org/web/packages/RankAggreg/vignettes/RankAggreg.pdf):
+
+```{r}
+library(RankAggreg) 
+
+# create a matrix of the phases ranked by increasing order of pc 
+ranks <- select(profiles, ends_with("-pc"))
+
+# also keep the pc in the same order
+```
+
