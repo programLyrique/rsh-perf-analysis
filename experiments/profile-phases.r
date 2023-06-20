@@ -60,7 +60,7 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE) {
     setwd(dirname(rfile_path))
 
     args <- if (with_harness) {
-        c("-q", "-f harness.r", paste0("--args ", rfile_name, " 100 10"))
+        c("-q", "-f harness.r", paste0("--args ", rfile_name, " 20 10"))
     } else {
         c("-q", paste0("-f ", rfile_name))
     }
@@ -120,9 +120,9 @@ extracted <- map(discard(rfiles_path, function(rfile) {
     basename(rfile) == "harness.r"
 }), process_profile, profile_dir, harness != "", .progress = TRUE)
 
-print(extracted)
 
 profiles <- bind_rows(extracted)
 
-
-write_csv(profiles, file.path(profile_dir, "profiles.csv"))
+csv_path <- file.path(profile_dir, "profiles.csv")
+append <- file.exists(csv_path)
+write_csv(profiles, csv_path, append = append)
