@@ -80,4 +80,7 @@ Now, we can compute the weighted rank aggregation:
 ranked <- RankAggreg(ranks, ncol(ranks), percents, "CE", "Spearman", seed = 745)
 ```
 
+```{r}
+tibble(Rank = 1:length(ranked$top.list), Phase = str_extract(ranked$top.list, "([^-])*")) %>% knitr::kable()
+```
 
