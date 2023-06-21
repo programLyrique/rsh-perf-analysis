@@ -13,6 +13,7 @@ library(readr)
 library(stringr)
 library(ggplot2)
 library(forcats)
+library(DT)
 
 here::i_am("analysis/perf-phases.Rmd")
 
@@ -52,8 +53,34 @@ Let's do it more correctly using [weighted rank aggregation](https://cran.r-proj
 library(RankAggreg) 
 
 # create a matrix of the phases ranked by increasing order of pc 
-ranks <- select(profiles, ends_with("-pc"))
+ranks_df <- select(profiles, ends_with("-pc"))
 
-# also keep the pc in the same order
+ranks <- matrix("", nrow = nrow(ranks_df), ncol = length(ranks_df), byrow=TRUE)
+percents <- matrix(0, nrow = nrow(ranks_df), ncol = length(ranks_df), byrow=TRUE)
+
+ranks <- apply(ranks_df, 1, function(row) {
+  unlist(row) %>% sort(decreasing=TRUE) %>% names()
+}) %>% t() # need to transpose!
+
+percents <-  apply(ranks_df, 1, function(row) {
+  unlist(row) %>% sort(decreasing=TRUE)
+}) %>% t() # need to transpose!
+# TODO: we should do both at the same time...
+
+```
+
+We first get the ranks of all the phases for each sample. The weights are the percentages.
+```{r}
+datatable(ranks)
+```
+
+Now, we can compute the weighted rank aggregation:
+
+```{r}
+ranked <- RankAggreg(ranks, ncol(ranks), percents, "CE", "Spearman", seed = 745)
+```
+
+```{r}
+tibble(Rank = 1:length(ranked$top.list), Phase = str_extract(ranked$top.list, "([^-])*")) %>% knitr::kable()
 ```
 
