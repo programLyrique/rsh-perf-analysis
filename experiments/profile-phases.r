@@ -26,6 +26,8 @@ harness <- if (length(args) >= 3) {
     ""
 }
 
+optLevel <- 2
+
 r_dir <- Sys.getenv("R_DIR", unset = "../build/bin")
 
 
@@ -60,17 +62,20 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE) {
     setwd(dirname(rfile_path))
 
     args <- if (with_harness) {
-        c("-q", "-f harness.r", paste0("--args ", rfile_name, " 20 10"))
+        c("-q", "-f harness.r", paste0("--args ", rfile_name, " 10 30"))
     } else {
         c("-q", paste0("-f ", rfile_name))
     }
+    start_time <- Sys.time()
     res <- system2(r_path, args,
         stdout = FALSE,
         env = c(
             "PIR_MEASURE_COMPILER=1", "PIR_MEASURE_COMPILER_BACKEND=1",
-            paste0("PIR_MEASURING_LOGFILE=", profile_path)
+            paste0("PIR_MEASURING_LOGFILE=", profile_path),
+            paste0("PIR_OPT_LEVEL=", optLevel)
         )
     )
+    end_time <- Sys.time()
     setwd(current_dir)
 
     if (res != 0) { # the command failed, just ignore
@@ -103,6 +108,7 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE) {
         filename = rfile_path,
         nb_lines = metrics$nb_lines,
         nb_loops = metrics$nb_loops,
+        execution_time = end_time - start_time
         total_measured_time = total_measured_time
     )
     for (line in lines) {
@@ -122,6 +128,7 @@ extracted <- map(discard(rfiles_path, function(rfile) {
 
 
 profiles <- bind_rows(extracted)
+
 
 csv_path <- file.path(profile_dir, "profiles.csv")
 append <- file.exists(csv_path)
