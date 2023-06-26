@@ -1,0 +1,84 @@
+---
+title: "Performance comparison of opt levels"
+author: "Pierre Donat-Bouillud"
+date: "2023-06-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(readr)
+library(stringr)
+library(tidyr)
+library(ggplot2)
+library(forcats)
+library(purrr)
+library(DT)
+
+here::i_am("analysis/opt-level-comparison.Rmd")
+
+library(here)
+```
+
+## Data Loading
+
+We load the profiling information for the 4 optimization levels (0 to 3):
+
+```{r}
+opt_levels <- map(0:3, \(i) read_csv(here(file.path(paste0("artifacts-opt", i, "-perf"), "results/benchmark_dir-profiles/profiles.csv"))))
+```
+
+```{r}
+for(i in seq_along(opt_levels)) {
+  opt_levels[[i]] <-  mutate(opt_levels[[i]], compiled_time_pc = total_measured_time / execution_time * 100, .before="execution_time") 
+}
+```
+
+
+
+```{r}
+base_level <- select(opt_levels[[1]], filename, compiled_time_pc, execution_time, total_measured_time)
+
+comp_levels <- left_join(base_level, opt_levels[[2]], by="filename", suffix=paste0("_opt", c(0, 1)), keep=FALSE) %>%  
+  select(filename, starts_with("compiled_time_pc"), starts_with("execution_time"), starts_with("total_measured_time")) %>% 
+  left_join(opt_levels[[3]], by="filename", suffix=c("", "_opt2"), keep=FALSE) %>% # the suffix won't work here
+  select(filename, starts_with("compiled_time_pc"), starts_with("execution_time"), starts_with("total_measured_time")) %>%
+  left_join(opt_levels[[4]], by="filename", suffix=c("", "_opt3"), keep=FALSE) %>%
+  select(filename, starts_with("compiled_time_pc"), starts_with("execution_time"), starts_with("total_measured_time")) %>%
+  rename(compiled_time_pc_opt2=compiled_time_pc, execution_time_opt2=execution_time, total_measured_time_opt2=total_measured_time)
+
+```
+
+
+## Comparison
+
+```{r execution_times, fig.width=15, fig.height=9}
+execution_times <- select(comp_levels, filename, starts_with("execution_time")) %>%
+    arrange(desc(execution_time_opt1),desc(execution_time_opt2)) %>% 
+  pivot_longer(!filename, names_to="opt level", values_to="values") %>%
+  mutate(filename = basename(filename)) 
+ggplot(execution_times) + 
+  geom_col(aes(x=fct_reorder2(filename, `opt level`, values), y=values, fill=`opt level`), position="dodge") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 0.5, vjust = 0.5)) +
+  labs(x = "file", y = "Exec time (s)") +
+  scale_y_continuous(trans="log1p")
+```
+
+Let's zoom on the quick ones:
+
+```{r small_exec_times, fig.width=15, fig.height=9}
+small_execution_times <- select(comp_levels, filename, starts_with("execution_time")) %>%
+  filter(execution_time_opt0 <= 10) %>%
+  arrange(desc(execution_time_opt1),desc(execution_time_opt2)) %>% 
+  pivot_longer(!filename, names_to="opt level", values_to="values") %>%
+  mutate(filename = basename(filename)) 
+
+ggplot(small_execution_times) + 
+  geom_col(aes(x=fct_reorder2(filename, `opt level`, values), y=values, fill=`opt level`), position="dodge") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 0.5, vjust = 0.5)) +
+  labs(x = "file", y = "Exec time (s)") 
+```
+
+

@@ -3,6 +3,8 @@ title: "Performance phases"
 author: "Pierre Donat-Bouillud"
 date: "2023-06-19"
 output: html_document
+params:
+  profiles_path: "artifacts-opt0-perf/results/benchmark_dir-profiles/profiles.csv"
 ---
 
 ```{r setup, include=FALSE}
@@ -23,8 +25,15 @@ library(here)
 ## Data loading
 
 ```{r}
-profiles <- read_csv(here("artifacts/results/benchmark_dir-profiles/profiles.csv"))
+profiles <- read_csv(here(params$profiles_path)) %>% mutate(compiled_time_pc = total_measured_time / execution_time * 100, .before="execution_time") 
 ```
+## Compilation time vs running time
+
+```{r}
+profiles %>% arrange(desc(compiled_time_pc)) %>% select(-starts_with("nb_l")) %>% datatable()
+```
+
+
 
 ## Basic analysis
 
