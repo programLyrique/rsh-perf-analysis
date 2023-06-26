@@ -62,7 +62,7 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE) {
     setwd(dirname(rfile_path))
 
     args <- if (with_harness) {
-        c("-q", "-f harness.r", paste0("--args ", rfile_name, " 10 30"))
+        c("-q", "-f harness.r", paste0("--args ", rfile_name, " 10 20"))
     } else {
         c("-q", paste0("-f ", rfile_name))
     }
@@ -108,7 +108,7 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE) {
         filename = rfile_path,
         nb_lines = metrics$nb_lines,
         nb_loops = metrics$nb_loops,
-        execution_time = end_time - start_time
+        execution_time = end_time - start_time,
         total_measured_time = total_measured_time
     )
     for (line in lines) {
