@@ -1,0 +1,41 @@
+
+---== Measuring breakdown ===---
+
+  Total lifetime: 2.04629 min
+
+  Timers (0.110823 secs in total, or 0.09%):
+                          compiler.cpp: done	1.503e-06 secs
+                  compiler.cpp: Initial post	1.645e-06 secs
+                    compiler.cpp: Final post	1.651e-06 secs
+                       compiler.cpp: Initial	4.819e-06 secs
+           compiler.cpp: TypefeedbackCleanup	9.616e-06 secs
+           compiler.cpp: InlineForcePromises	7.2991e-05 secs
+                 compiler.cpp: MatchCallArgs	8.1263e-05 secs
+                    compiler.cpp: DotDotDots	9.5624e-05 secs
+                      compiler.cpp: DelayEnv	0.000138394 secs
+                 compiler.cpp: LoopInvariant	0.000221806 secs
+            compiler.cpp: CleanupCheckpoints	0.000274783 secs
+                  compiler.cpp: verification	0.000371945 secs
+                    compiler.cpp: EagerCalls	0.00041448 secs
+                   compiler.cpp: LoadElision	0.000589344 secs
+              compiler.cpp: HoistInstruction	0.000599801 secs
+                      compiler.cpp: Overflow	0.000899363 secs
+                 compiler.cpp: TypeInference	0.000961523 secs
+                       backend.cpp: lowering	0.00131979 secs
+              compiler.cpp: OptimizeContexts	0.00142568 secs
+                      compiler.cpp: ElideEnv	0.00157931 secs
+                    compiler.cpp: DelayInstr	0.00177178 secs
+                        compiler.cpp: Inline	0.00188295 secs
+                  compiler.cpp: ElideEnvSpec	0.00208344 secs
+            compiler.cpp: OptimizeVisibility	0.00229839 secs
+                compiler.cpp: module cleanup	0.00363453 secs
+                  compiler.cpp: Constantfold	0.00421616 secs
+                           compiler.cpp: GVN	0.00527884 secs
+           compiler.cpp: OptimizeAssumptions	0.00724826 secs
+                compiler.cpp: ForceDominance	0.00745773 secs
+              compiler.cpp: DeadStoreRemoval	0.00785122 secs
+                       compiler.cpp: Cleanup	0.00853355 secs
+               compiler.cpp: ScopeResolution	0.0137848 secs
+                       backend.cpp: pir2llvm	0.0165586 secs
+                         backend.cpp: overal	0.0191575 secs
+
