@@ -1,0 +1,89 @@
+Initial: {
+  TypeFeedbackCleanup -> DefaultOpt
+}
+Initial -> Initial: optLevel > 2 : budget = 60
+
+Initial Post: {
+  DefaultPostPhaseOpt
+}
+
+Initial -> Initial Post
+
+Speculation: {
+  a: TypeFeedbackCleanup
+  a -> ElideEnvSpec -> DefaultOpt -> TypeFeedbackCleanup -> TypeSpeculation
+}
+
+Speculation -> Speculation: optLevel > 0 : budget = 100
+
+Initial Post -> Speculation: optLevel > 0
+
+Speculation Post: {
+  DefaultPostPhaseOpt
+}
+
+Speculation -> Speculation Post: optLevel > 1
+
+Remove CP: {
+  CleanupCheckpoints -> DefaultPostPhaseOpt
+}
+
+Speculation Post -> Remove CP
+
+Intermediate 2: {
+  DefaultOpt
+}
+
+Intermediate 2 -> Intermediate 2: optLevel > 2 : budget = 60
+
+Intermediate 2 post: {
+  DefaultPostPhaseOpt
+}
+
+Remove CP -> Intermediate 2 -> Intermediate 2 post
+
+CleanupFS: {
+  CleanupFramestate -> CleanupCheckpoints
+}
+
+Intermediate 2 post -> CleanupFS
+
+Final: {
+  DefaultOpt -> ElideEnvSpec -> CleanupCheckpoints
+}
+
+Final -> Final: optLevel > 2 : budget = 120
+
+CleanupFS -> Final
+Initial post -> Final
+Speculation -> Final
+
+Final post: {
+  DefaultPostPhaseOpt -> ConstantFold -> Cleanup -> CleanupCheckpoints
+}
+
+Final -> Final post
+
+# Common groups of passes
+
+"""
+DefaultPostPhaseOpt: {
+  HoistInstruction -> LoopInvariant
+}
+
+DefaultOpt: {
+  DoDotDots -> EagerCalls -> MatchCallArgs -> InlineFOrcePromises -> i
+  i: Inline
+  a: OptimizeContexts
+  i -> a
+  a -> d
+  d: DelayInstr
+  d -> ForceDominance -> ScopeResolution -> LoadElision -> GVN -> ConstantFold -> DeadStoreRemoval -> Inline -> OptimizeContexts -> v
+  v: OptimizeVisibility
+  v -> OptimizeAssumptions -> c
+  c: Cleanup
+  c -> ElideEnv -> DelayEnv -> DelayInstr -> Cleanup -> OptimizeVisibility -> as
+  as: OptimizeAssumptions
+  as -> TypeInference -> Overflow
+}
+"""

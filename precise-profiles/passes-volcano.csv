@@ -1,0 +1,2117 @@
+pass,changed,current_budget,exec_time,iteration,phase,run
+Initial,0,59,1.6418e-05,0,Initial,0
+TypefeedbackCleanup,0,58,1.1383e-05,0,Initial,0
+DotDotDots,0,57,1.2227e-05,0,Initial,0
+EagerCalls,0,56,1.8024e-05,0,Initial,0
+MatchCallArgs,0,55,1.1407e-05,0,Initial,0
+InlineForcePromises,0,54,1.1525e-05,0,Initial,0
+Inline,0,53,1.3075e-05,0,Initial,0
+OptimizeContexts,0,52,1.5466e-05,0,Initial,0
+DelayInstr,0,51,2.0675e-05,0,Initial,0
+ForceDominance,0,50,7.4856e-05,0,Initial,0
+ScopeResolution,1,49,0.000158743,0,Initial,0
+LoadElision,0,48,1.547e-05,0,Initial,0
+GVN,1,47,6.9788e-05,0,Initial,0
+Constantfold,1,46,5.0828e-05,0,Initial,0
+DeadStoreRemoval,0,45,1.7551e-05,0,Initial,0
+Inline,0,44,1.112e-05,0,Initial,0
+OptimizeContexts,0,43,1.3229e-05,0,Initial,0
+OptimizeVisibility,1,42,2.6789e-05,0,Initial,0
+OptimizeAssumptions,1,41,5.5227e-05,0,Initial,0
+Cleanup,1,40,5.6679e-05,0,Initial,0
+ElideEnv,1,39,2.3163e-05,0,Initial,0
+DelayEnv,1,38,1.3231e-05,0,Initial,0
+DelayInstr,0,37,1.542e-05,0,Initial,0
+Cleanup,1,36,4.6012e-05,0,Initial,0
+OptimizeVisibility,1,35,1.852e-05,0,Initial,0
+OptimizeAssumptions,1,34,3.6609e-05,0,Initial,0
+Cleanup,1,33,3.1574e-05,0,Initial,0
+TypeInference,0,32,1.7383e-05,0,Initial,0
+Overflow,0,31,1.1376e-05,0,Initial,0
+Initial post,0,0,6.167e-06,0,Initial post,0
+HoistInstruction,0,0,1.3567e-05,0,Initial post,0
+LoopInvariant,0,0,9.488e-06,0,Initial post,0
+Speculation,0,99,6.116e-06,0,Speculation,0
+TypefeedbackCleanup,0,98,6.108e-06,0,Speculation,0
+ElideEnvSpec,0,97,3.0238e-05,0,Speculation,0
+DotDotDots,0,96,7.112e-06,0,Speculation,0
+EagerCalls,0,95,1.1077e-05,0,Speculation,0
+MatchCallArgs,0,94,6.741e-06,0,Speculation,0
+InlineForcePromises,0,93,6.817e-06,0,Speculation,0
+Inline,0,92,7.194e-06,0,Speculation,0
+OptimizeContexts,0,91,8.495e-06,0,Speculation,0
+DelayInstr,0,90,1.1537e-05,0,Speculation,0
+ForceDominance,0,89,3.9438e-05,0,Speculation,0
+ScopeResolution,1,88,0.000116152,0,Speculation,0
+LoadElision,0,87,1.014e-05,0,Speculation,0
+GVN,0,86,3.7585e-05,0,Speculation,0
+Constantfold,1,85,2.2783e-05,0,Speculation,0
+DeadStoreRemoval,0,84,1.1934e-05,0,Speculation,0
+Inline,0,83,7.821e-06,0,Speculation,0
+OptimizeContexts,0,82,8.953e-06,0,Speculation,0
+OptimizeVisibility,0,81,1.3605e-05,0,Speculation,0
+OptimizeAssumptions,0,80,2.3194e-05,0,Speculation,0
+Cleanup,0,79,3.3055e-05,0,Speculation,0
+ElideEnv,1,78,1.8261e-05,0,Speculation,0
+DelayEnv,0,77,8.427e-06,0,Speculation,0
+DelayInstr,0,76,1.2105e-05,0,Speculation,0
+Cleanup,0,75,3.3149e-05,0,Speculation,0
+OptimizeVisibility,0,74,1.2563e-05,0,Speculation,0
+OptimizeAssumptions,0,73,2.1091e-05,0,Speculation,0
+Cleanup,0,72,3.2845e-05,0,Speculation,0
+TypeInference,0,71,1.5884e-05,0,Speculation,0
+Overflow,0,70,1.108e-05,0,Speculation,0
+TypefeedbackCleanup,0,69,6.482e-06,0,Speculation,0
+TypeSpeculation,1,68,3.7741e-05,0,Speculation,0
+Speculation,0,67,7.33e-06,1,Speculation,0
+TypefeedbackCleanup,0,66,7.129e-06,1,Speculation,0
+ElideEnvSpec,0,65,2.619e-05,1,Speculation,0
+DotDotDots,0,64,8.035e-06,1,Speculation,0
+EagerCalls,0,63,1.2106e-05,1,Speculation,0
+MatchCallArgs,0,62,7.745e-06,1,Speculation,0
+InlineForcePromises,0,61,7.922e-06,1,Speculation,0
+Inline,0,60,8.182e-06,1,Speculation,0
+OptimizeContexts,0,59,9.421e-06,1,Speculation,0
+DelayInstr,0,58,1.5164e-05,1,Speculation,0
+ForceDominance,0,57,4.0715e-05,1,Speculation,0
+ScopeResolution,0,56,0.000105072,1,Speculation,0
+LoadElision,0,55,1.092e-05,1,Speculation,0
+GVN,0,54,4.0615e-05,1,Speculation,0
+Constantfold,0,53,2.2887e-05,1,Speculation,0
+DeadStoreRemoval,0,52,1.3276e-05,1,Speculation,0
+Inline,0,51,8.432e-06,1,Speculation,0
+OptimizeContexts,0,50,9.759e-06,1,Speculation,0
+OptimizeVisibility,0,49,1.3951e-05,1,Speculation,0
+OptimizeAssumptions,0,48,3.417e-05,1,Speculation,0
+Cleanup,0,47,4.3911e-05,1,Speculation,0
+ElideEnv,0,46,1.8074e-05,1,Speculation,0
+DelayEnv,0,45,9.269e-06,1,Speculation,0
+DelayInstr,0,44,1.4081e-05,1,Speculation,0
+Cleanup,0,43,3.6934e-05,1,Speculation,0
+OptimizeVisibility,0,42,1.3803e-05,1,Speculation,0
+OptimizeAssumptions,0,41,3.0402e-05,1,Speculation,0
+Cleanup,0,40,3.756e-05,1,Speculation,0
+TypeInference,0,39,1.8971e-05,1,Speculation,0
+Overflow,0,38,1.3046e-05,1,Speculation,0
+TypefeedbackCleanup,0,37,7.153e-06,1,Speculation,0
+TypeSpeculation,0,36,2.5312e-05,1,Speculation,0
+Speculation post,0,0,8.033e-06,0,Speculation post,0
+HoistInstruction,1,0,1.8597e-05,0,Speculation post,0
+LoopInvariant,0,0,9.676e-06,0,Speculation post,0
+Remove CP,0,0,7.08e-06,0,Remove CP,0
+CleanupCheckpoints,1,0,1.1866e-05,0,Remove CP,0
+HoistInstruction,0,0,9.872e-06,0,Remove CP,0
+LoopInvariant,0,0,6.636e-06,0,Remove CP,0
+Intermediate 2,0,59,5.067e-06,0,Intermediate 2,0
+DotDotDots,0,58,5.948e-06,0,Intermediate 2,0
+EagerCalls,0,57,9.565e-06,0,Intermediate 2,0
+MatchCallArgs,0,56,5.727e-06,0,Intermediate 2,0
+InlineForcePromises,0,55,5.859e-06,0,Intermediate 2,0
+Inline,0,54,6.088e-06,0,Intermediate 2,0
+OptimizeContexts,0,53,7.34e-06,0,Intermediate 2,0
+DelayInstr,0,52,1.0893e-05,0,Intermediate 2,0
+ForceDominance,0,51,3.2638e-05,0,Intermediate 2,0
+ScopeResolution,0,50,7.5282e-05,0,Intermediate 2,0
+LoadElision,0,49,7.994e-06,0,Intermediate 2,0
+GVN,0,48,2.9879e-05,0,Intermediate 2,0
+Constantfold,0,47,1.8639e-05,0,Intermediate 2,0
+DeadStoreRemoval,0,46,9.936e-06,0,Intermediate 2,0
+Inline,0,45,6.17e-06,0,Intermediate 2,0
+OptimizeContexts,0,44,7.413e-06,0,Intermediate 2,0
+OptimizeVisibility,0,43,1.1444e-05,0,Intermediate 2,0
+OptimizeAssumptions,0,42,2.669e-05,0,Intermediate 2,0
+Cleanup,1,41,3.3481e-05,0,Intermediate 2,0
+ElideEnv,0,40,1.296e-05,0,Intermediate 2,0
+DelayEnv,0,39,6.557e-06,0,Intermediate 2,0
+DelayInstr,0,38,1.0178e-05,0,Intermediate 2,0
+Cleanup,1,37,2.5876e-05,0,Intermediate 2,0
+OptimizeVisibility,0,36,9.263e-06,0,Intermediate 2,0
+OptimizeAssumptions,0,35,2.0983e-05,0,Intermediate 2,0
+Cleanup,0,34,2.4494e-05,0,Intermediate 2,0
+TypeInference,0,33,1.4369e-05,0,Intermediate 2,0
+Overflow,0,32,8.709e-06,0,Intermediate 2,0
+Intermediate 2 post,0,0,4.783e-06,0,Intermediate 2 post,0
+HoistInstruction,0,0,8.126e-06,0,Intermediate 2 post,0
+LoopInvariant,0,0,5.831e-06,0,Intermediate 2 post,0
+Cleanup FS,0,0,4.437e-06,0,Cleanup FS,0
+CleanupFramestate,1,0,5.972e-06,0,Cleanup FS,0
+CleanupCheckpoints,0,0,6.566e-06,0,Cleanup FS,0
+Final,0,119,4.66e-06,0,Final,0
+DotDotDots,0,118,5.303e-06,0,Final,0
+EagerCalls,0,117,7.846e-06,0,Final,0
+MatchCallArgs,0,116,5.018e-06,0,Final,0
+InlineForcePromises,0,115,5.176e-06,0,Final,0
+Inline,0,114,5.436e-06,0,Final,0
+OptimizeContexts,0,113,6.366e-06,0,Final,0
+DelayInstr,0,112,9.444e-06,0,Final,0
+ForceDominance,0,111,2.8029e-05,0,Final,0
+ScopeResolution,0,110,7.142e-05,0,Final,0
+LoadElision,0,109,5.843e-06,0,Final,0
+GVN,0,108,2.5833e-05,0,Final,0
+Constantfold,0,107,1.3526e-05,0,Final,0
+DeadStoreRemoval,0,106,8.656e-06,0,Final,0
+Inline,0,105,5.185e-06,0,Final,0
+OptimizeContexts,0,104,5.614e-06,0,Final,0
+OptimizeVisibility,0,103,8.889e-06,0,Final,0
+OptimizeAssumptions,0,102,2.1181e-05,0,Final,0
+Cleanup,0,101,2.6114e-05,0,Final,0
+ElideEnv,0,100,1.0816e-05,0,Final,0
+DelayEnv,0,99,5.565e-06,0,Final,0
+DelayInstr,0,98,8.648e-06,0,Final,0
+Cleanup,0,97,2.1025e-05,0,Final,0
+OptimizeVisibility,0,96,8.096e-06,0,Final,0
+OptimizeAssumptions,0,95,1.8513e-05,0,Final,0
+Cleanup,0,94,2.12e-05,0,Final,0
+TypeInference,0,93,1.3636e-05,0,Final,0
+Overflow,0,92,7.847e-06,0,Final,0
+ElideEnvSpec,0,91,1.6156e-05,0,Final,0
+CleanupCheckpoints,0,90,6.06e-06,0,Final,0
+Final post,0,0,4.146e-06,0,Final post,0
+HoistInstruction,0,0,7.041e-06,0,Final post,0
+LoopInvariant,0,0,5.381e-06,0,Final post,0
+Constantfold,0,0,1.1669e-05,0,Final post,0
+Cleanup,0,0,2.1493e-05,0,Final post,0
+CleanupCheckpoints,0,0,5.685e-06,0,Final post,0
+done,0,0,4.277e-06,0,done,0
+Initial,0,59,1.4735e-05,0,Initial,1
+TypefeedbackCleanup,0,58,1.091e-05,0,Initial,1
+DotDotDots,0,57,1.2765e-05,0,Initial,1
+EagerCalls,0,56,1.937e-05,0,Initial,1
+MatchCallArgs,0,55,1.2022e-05,0,Initial,1
+InlineForcePromises,0,54,1.1447e-05,0,Initial,1
+Inline,0,53,1.2814e-05,0,Initial,1
+OptimizeContexts,0,52,1.6491e-05,0,Initial,1
+DelayInstr,0,51,2.0441e-05,0,Initial,1
+ForceDominance,0,50,6.7233e-05,0,Initial,1
+ScopeResolution,1,49,0.00014938,0,Initial,1
+LoadElision,0,48,1.4686e-05,0,Initial,1
+GVN,1,47,6.831e-05,0,Initial,1
+Constantfold,1,46,5.0182e-05,0,Initial,1
+DeadStoreRemoval,0,45,1.7959e-05,0,Initial,1
+Inline,0,44,1.1223e-05,0,Initial,1
+OptimizeContexts,0,43,1.2923e-05,0,Initial,1
+OptimizeVisibility,1,42,2.613e-05,0,Initial,1
+OptimizeAssumptions,1,41,5.3083e-05,0,Initial,1
+Cleanup,1,40,5.4001e-05,0,Initial,1
+ElideEnv,1,39,2.289e-05,0,Initial,1
+DelayEnv,1,38,1.3294e-05,0,Initial,1
+DelayInstr,0,37,1.5101e-05,0,Initial,1
+Cleanup,1,36,3.879e-05,0,Initial,1
+OptimizeVisibility,1,35,1.9765e-05,0,Initial,1
+OptimizeAssumptions,1,34,3.7131e-05,0,Initial,1
+Cleanup,1,33,3.3103e-05,0,Initial,1
+TypeInference,0,32,1.6572e-05,0,Initial,1
+Overflow,0,31,1.1664e-05,0,Initial,1
+Initial post,0,0,6.098e-06,0,Initial post,1
+HoistInstruction,0,0,1.2373e-05,0,Initial post,1
+LoopInvariant,0,0,9.669e-06,0,Initial post,1
+Speculation,0,99,6.047e-06,0,Speculation,1
+TypefeedbackCleanup,0,98,6.713e-06,0,Speculation,1
+ElideEnvSpec,0,97,2.8365e-05,0,Speculation,1
+DotDotDots,0,96,7.325e-06,0,Speculation,1
+EagerCalls,0,95,1.1269e-05,0,Speculation,1
+MatchCallArgs,0,94,6.824e-06,0,Speculation,1
+InlineForcePromises,0,93,7.118e-06,0,Speculation,1
+Inline,0,92,7.419e-06,0,Speculation,1
+OptimizeContexts,0,91,9.267e-06,0,Speculation,1
+DelayInstr,0,90,1.1331e-05,0,Speculation,1
+ForceDominance,0,89,3.7335e-05,0,Speculation,1
+ScopeResolution,1,88,0.00011652,0,Speculation,1
+LoadElision,0,87,1.0144e-05,0,Speculation,1
+GVN,0,86,3.7421e-05,0,Speculation,1
+Constantfold,1,85,2.3159e-05,0,Speculation,1
+DeadStoreRemoval,0,84,1.2184e-05,0,Speculation,1
+Inline,0,83,7.986e-06,0,Speculation,1
+OptimizeContexts,0,82,9.08e-06,0,Speculation,1
+OptimizeVisibility,0,81,1.3545e-05,0,Speculation,1
+OptimizeAssumptions,0,80,2.3329e-05,0,Speculation,1
+Cleanup,0,79,3.2923e-05,0,Speculation,1
+ElideEnv,1,78,1.7928e-05,0,Speculation,1
+DelayEnv,0,77,8.399e-06,0,Speculation,1
+DelayInstr,0,76,1.2087e-05,0,Speculation,1
+Cleanup,0,75,3.2964e-05,0,Speculation,1
+OptimizeVisibility,0,74,1.2841e-05,0,Speculation,1
+OptimizeAssumptions,0,73,2.1012e-05,0,Speculation,1
+Cleanup,0,72,3.3088e-05,0,Speculation,1
+TypeInference,0,71,1.5316e-05,0,Speculation,1
+Overflow,0,70,1.1647e-05,0,Speculation,1
+TypefeedbackCleanup,0,69,6.549e-06,0,Speculation,1
+TypeSpeculation,1,68,3.6256e-05,0,Speculation,1
+Speculation,0,67,7.296e-06,1,Speculation,1
+TypefeedbackCleanup,0,66,7.134e-06,1,Speculation,1
+ElideEnvSpec,0,65,2.5981e-05,1,Speculation,1
+DotDotDots,0,64,8.162e-06,1,Speculation,1
+EagerCalls,0,63,1.1722e-05,1,Speculation,1
+MatchCallArgs,0,62,7.765e-06,1,Speculation,1
+InlineForcePromises,0,61,7.964e-06,1,Speculation,1
+Inline,0,60,8.312e-06,1,Speculation,1
+OptimizeContexts,0,59,9.821e-06,1,Speculation,1
+DelayInstr,0,58,1.4794e-05,1,Speculation,1
+ForceDominance,0,57,4.0111e-05,1,Speculation,1
+ScopeResolution,0,56,0.000105951,1,Speculation,1
+LoadElision,0,55,1.0766e-05,1,Speculation,1
+GVN,0,54,4.0328e-05,1,Speculation,1
+Constantfold,0,53,2.2828e-05,1,Speculation,1
+DeadStoreRemoval,0,52,1.3318e-05,1,Speculation,1
+Inline,0,51,8.396e-06,1,Speculation,1
+OptimizeContexts,0,50,9.687e-06,1,Speculation,1
+OptimizeVisibility,0,49,1.985e-05,1,Speculation,1
+OptimizeAssumptions,0,48,3.5396e-05,1,Speculation,1
+Cleanup,0,47,4.4825e-05,1,Speculation,1
+ElideEnv,0,46,1.7739e-05,1,Speculation,1
+DelayEnv,0,45,9.472e-06,1,Speculation,1
+DelayInstr,0,44,1.4019e-05,1,Speculation,1
+Cleanup,0,43,3.735e-05,1,Speculation,1
+OptimizeVisibility,0,42,1.4171e-05,1,Speculation,1
+OptimizeAssumptions,0,41,3.0207e-05,1,Speculation,1
+Cleanup,0,40,3.8875e-05,1,Speculation,1
+TypeInference,0,39,1.8717e-05,1,Speculation,1
+Overflow,0,38,1.3332e-05,1,Speculation,1
+TypefeedbackCleanup,0,37,7.21e-06,1,Speculation,1
+TypeSpeculation,0,36,2.4565e-05,1,Speculation,1
+Speculation post,0,0,7.496e-06,0,Speculation post,1
+HoistInstruction,1,0,1.895e-05,0,Speculation post,1
+LoopInvariant,0,0,9.685e-06,0,Speculation post,1
+Remove CP,0,0,7.09e-06,0,Remove CP,1
+CleanupCheckpoints,1,0,1.1621e-05,0,Remove CP,1
+HoistInstruction,0,0,9.21e-06,0,Remove CP,1
+LoopInvariant,0,0,6.601e-06,0,Remove CP,1
+Intermediate 2,0,59,4.894e-06,0,Intermediate 2,1
+DotDotDots,0,58,5.966e-06,0,Intermediate 2,1
+EagerCalls,0,57,9.816e-06,0,Intermediate 2,1
+MatchCallArgs,0,56,5.743e-06,0,Intermediate 2,1
+InlineForcePromises,0,55,5.891e-06,0,Intermediate 2,1
+Inline,0,54,6.352e-06,0,Intermediate 2,1
+OptimizeContexts,0,53,7.357e-06,0,Intermediate 2,1
+DelayInstr,0,52,1.0749e-05,0,Intermediate 2,1
+ForceDominance,0,51,3.2084e-05,0,Intermediate 2,1
+ScopeResolution,0,50,7.4357e-05,0,Intermediate 2,1
+LoadElision,0,49,8.247e-06,0,Intermediate 2,1
+GVN,0,48,2.9936e-05,0,Intermediate 2,1
+Constantfold,0,47,1.8814e-05,0,Intermediate 2,1
+DeadStoreRemoval,0,46,1.0095e-05,0,Intermediate 2,1
+Inline,0,45,6.348e-06,0,Intermediate 2,1
+OptimizeContexts,0,44,7.392e-06,0,Intermediate 2,1
+OptimizeVisibility,0,43,1.1064e-05,0,Intermediate 2,1
+OptimizeAssumptions,0,42,2.61e-05,0,Intermediate 2,1
+Cleanup,1,41,3.2423e-05,0,Intermediate 2,1
+ElideEnv,0,40,1.2755e-05,0,Intermediate 2,1
+DelayEnv,0,39,6.577e-06,0,Intermediate 2,1
+DelayInstr,0,38,9.879e-06,0,Intermediate 2,1
+Cleanup,1,37,2.5431e-05,0,Intermediate 2,1
+OptimizeVisibility,0,36,9.109e-06,0,Intermediate 2,1
+OptimizeAssumptions,0,35,2.0458e-05,0,Intermediate 2,1
+Cleanup,0,34,2.4243e-05,0,Intermediate 2,1
+TypeInference,0,33,1.4752e-05,0,Intermediate 2,1
+Overflow,0,32,8.859e-06,0,Intermediate 2,1
+Intermediate 2 post,0,0,5.004e-06,0,Intermediate 2 post,1
+HoistInstruction,0,0,8.209e-06,0,Intermediate 2 post,1
+LoopInvariant,0,0,6.076e-06,0,Intermediate 2 post,1
+Cleanup FS,0,0,4.5e-06,0,Cleanup FS,1
+CleanupFramestate,1,0,5.85e-06,0,Cleanup FS,1
+CleanupCheckpoints,0,0,6.608e-06,0,Cleanup FS,1
+Final,0,119,4.486e-06,0,Final,1
+DotDotDots,0,118,5.398e-06,0,Final,1
+EagerCalls,0,117,7.821e-06,0,Final,1
+MatchCallArgs,0,116,4.943e-06,0,Final,1
+InlineForcePromises,0,115,5.207e-06,0,Final,1
+Inline,0,114,5.515e-06,0,Final,1
+OptimizeContexts,0,113,6.38e-06,0,Final,1
+DelayInstr,0,112,1.005e-05,0,Final,1
+ForceDominance,0,111,2.8402e-05,0,Final,1
+ScopeResolution,0,110,7.0983e-05,0,Final,1
+LoadElision,0,109,5.762e-06,0,Final,1
+GVN,0,108,2.5846e-05,0,Final,1
+Constantfold,0,107,1.3563e-05,0,Final,1
+DeadStoreRemoval,0,106,8.815e-06,0,Final,1
+Inline,0,105,5.216e-06,0,Final,1
+OptimizeContexts,0,104,5.932e-06,0,Final,1
+OptimizeVisibility,0,103,8.803e-06,0,Final,1
+OptimizeAssumptions,0,102,2.1064e-05,0,Final,1
+Cleanup,0,101,2.6481e-05,0,Final,1
+ElideEnv,0,100,1.0557e-05,0,Final,1
+DelayEnv,0,99,5.519e-06,0,Final,1
+DelayInstr,0,98,8.758e-06,0,Final,1
+Cleanup,0,97,2.1174e-05,0,Final,1
+OptimizeVisibility,0,96,8.165e-06,0,Final,1
+OptimizeAssumptions,0,95,1.8549e-05,0,Final,1
+Cleanup,0,94,2.1107e-05,0,Final,1
+TypeInference,0,93,1.3921e-05,0,Final,1
+Overflow,0,92,8.088e-06,0,Final,1
+ElideEnvSpec,0,91,1.6046e-05,0,Final,1
+CleanupCheckpoints,0,90,6.089e-06,0,Final,1
+Final post,0,0,4.132e-06,0,Final post,1
+HoistInstruction,0,0,7.123e-06,0,Final post,1
+LoopInvariant,0,0,5.438e-06,0,Final post,1
+Constantfold,0,0,1.1779e-05,0,Final post,1
+Cleanup,0,0,2.1842e-05,0,Final post,1
+CleanupCheckpoints,0,0,5.655e-06,0,Final post,1
+done,0,0,4.103e-06,0,done,1
+Initial,0,59,0.000205515,0,Initial,2
+TypefeedbackCleanup,0,58,0.000197783,0,Initial,2
+DotDotDots,0,57,0.000211942,0,Initial,2
+EagerCalls,0,56,0.000280604,0,Initial,2
+MatchCallArgs,0,55,0.000217264,0,Initial,2
+InlineForcePromises,0,54,0.000218431,0,Initial,2
+Inline,1,53,0.000657838,0,Initial,2
+OptimizeContexts,0,52,0.000410293,0,Initial,2
+DelayInstr,0,51,0.000467038,0,Initial,2
+ForceDominance,0,50,0.00890945,0,Initial,2
+ScopeResolution,1,49,0.00681417,0,Initial,2
+LoadElision,0,48,0.000326588,0,Initial,2
+GVN,0,47,0.00131177,0,Initial,2
+Constantfold,0,46,0.00168359,0,Initial,2
+DeadStoreRemoval,0,45,0.00503379,0,Initial,2
+Inline,0,44,0.000223118,0,Initial,2
+OptimizeContexts,0,43,0.000377308,0,Initial,2
+OptimizeVisibility,1,42,0.000503152,0,Initial,2
+OptimizeAssumptions,1,41,0.0023114,0,Initial,2
+Cleanup,1,40,0.000767521,0,Initial,2
+ElideEnv,0,39,0.000418046,0,Initial,2
+DelayEnv,1,38,0.000197674,0,Initial,2
+DelayInstr,0,37,0.000363594,0,Initial,2
+Cleanup,0,36,0.000660901,0,Initial,2
+OptimizeVisibility,0,35,0.000329708,0,Initial,2
+OptimizeAssumptions,1,34,0.00155319,0,Initial,2
+Cleanup,0,33,0.000645557,0,Initial,2
+TypeInference,0,32,0.000302725,0,Initial,2
+Overflow,0,31,0.000348451,0,Initial,2
+Initial post,0,0,0.000165306,0,Initial post,2
+HoistInstruction,1,0,0.000303356,0,Initial post,2
+LoopInvariant,0,0,0.000250955,0,Initial post,2
+Speculation,0,99,0.000166825,0,Speculation,2
+TypefeedbackCleanup,0,98,0.000166663,0,Speculation,2
+ElideEnvSpec,1,97,0.00284953,0,Speculation,2
+DotDotDots,0,96,0.000193083,0,Speculation,2
+EagerCalls,0,95,0.000246602,0,Speculation,2
+MatchCallArgs,0,94,0.000192007,0,Speculation,2
+InlineForcePromises,0,93,0.000194006,0,Speculation,2
+Inline,0,92,0.000196233,0,Speculation,2
+OptimizeContexts,1,91,0.000508213,0,Speculation,2
+DelayInstr,0,90,0.000386061,0,Speculation,2
+ForceDominance,1,89,0.00589642,0,Speculation,2
+ScopeResolution,1,88,0.00584465,0,Speculation,2
+LoadElision,0,87,0.000296828,0,Speculation,2
+GVN,0,86,0.00124828,0,Speculation,2
+Constantfold,0,85,0.000997106,0,Speculation,2
+DeadStoreRemoval,1,84,0.0052492,0,Speculation,2
+Inline,0,83,0.000208881,0,Speculation,2
+OptimizeContexts,0,82,0.000226749,0,Speculation,2
+OptimizeVisibility,0,81,0.00035116,0,Speculation,2
+OptimizeAssumptions,1,80,0.00354604,0,Speculation,2
+Cleanup,0,79,0.000776782,0,Speculation,2
+ElideEnv,0,78,0.000395175,0,Speculation,2
+DelayEnv,1,77,0.000181512,0,Speculation,2
+DelayInstr,1,76,0.000421466,0,Speculation,2
+Cleanup,0,75,0.0009003,0,Speculation,2
+OptimizeVisibility,0,74,0.000253297,0,Speculation,2
+OptimizeAssumptions,1,73,0.00230243,0,Speculation,2
+Cleanup,0,72,0.000896937,0,Speculation,2
+TypeInference,0,71,0.000346713,0,Speculation,2
+Overflow,0,70,0.000355408,0,Speculation,2
+TypefeedbackCleanup,0,69,0.000161155,0,Speculation,2
+TypeSpeculation,1,68,0.00248458,0,Speculation,2
+Speculation,0,67,0.000175433,1,Speculation,2
+TypefeedbackCleanup,0,66,0.000171359,1,Speculation,2
+ElideEnvSpec,1,65,0.00113359,1,Speculation,2
+DotDotDots,0,64,0.000184149,1,Speculation,2
+EagerCalls,0,63,0.000224372,1,Speculation,2
+MatchCallArgs,0,62,0.000179128,1,Speculation,2
+InlineForcePromises,0,61,0.000183307,1,Speculation,2
+Inline,0,60,0.000181358,1,Speculation,2
+OptimizeContexts,0,59,0.000198433,1,Speculation,2
+DelayInstr,0,58,0.00038363,1,Speculation,2
+ForceDominance,1,57,0.00152315,1,Speculation,2
+ScopeResolution,0,56,0.00515843,1,Speculation,2
+LoadElision,0,55,0.000306654,1,Speculation,2
+GVN,0,54,0.00122012,1,Speculation,2
+Constantfold,0,53,0.00139263,1,Speculation,2
+DeadStoreRemoval,0,52,0.00454624,1,Speculation,2
+Inline,0,51,0.000169996,1,Speculation,2
+OptimizeContexts,0,50,0.000182138,1,Speculation,2
+OptimizeVisibility,0,49,0.000237587,1,Speculation,2
+OptimizeAssumptions,1,48,0.00326952,1,Speculation,2
+Cleanup,0,47,0.00127916,1,Speculation,2
+ElideEnv,0,46,0.000273408,1,Speculation,2
+DelayEnv,0,45,0.000128369,1,Speculation,2
+DelayInstr,0,44,0.000244187,1,Speculation,2
+Cleanup,0,43,0.000675846,1,Speculation,2
+OptimizeVisibility,0,42,0.000177927,1,Speculation,2
+OptimizeAssumptions,0,41,0.00132297,1,Speculation,2
+Cleanup,0,40,0.000674636,1,Speculation,2
+TypeInference,0,39,0.000270741,1,Speculation,2
+Overflow,0,38,0.000240375,1,Speculation,2
+TypefeedbackCleanup,0,37,0.000110552,1,Speculation,2
+TypeSpeculation,0,36,0.000386341,1,Speculation,2
+Speculation post,0,0,0.000110649,0,Speculation post,2
+HoistInstruction,1,0,0.00019834,0,Speculation post,2
+LoopInvariant,0,0,0.000143181,0,Speculation post,2
+Remove CP,0,0,0.000108078,0,Remove CP,2
+CleanupCheckpoints,1,0,0.000121547,0,Remove CP,2
+HoistInstruction,1,0,0.000151136,0,Remove CP,2
+LoopInvariant,0,0,0.000106442,0,Remove CP,2
+Intermediate 2,0,59,7.8246e-05,0,Intermediate 2,2
+DotDotDots,0,58,8.5792e-05,0,Intermediate 2,2
+EagerCalls,0,57,0.000111636,0,Intermediate 2,2
+MatchCallArgs,0,56,8.4762e-05,0,Intermediate 2,2
+InlineForcePromises,0,55,8.4595e-05,0,Intermediate 2,2
+Inline,0,54,8.6761e-05,0,Intermediate 2,2
+OptimizeContexts,0,53,9.5205e-05,0,Intermediate 2,2
+DelayInstr,0,52,0.00018047,0,Intermediate 2,2
+ForceDominance,1,51,0.000475408,0,Intermediate 2,2
+ScopeResolution,0,50,0.00210839,0,Intermediate 2,2
+LoadElision,0,49,0.000154297,0,Intermediate 2,2
+GVN,0,48,0.000597425,0,Intermediate 2,2
+Constantfold,0,47,0.000289109,0,Intermediate 2,2
+DeadStoreRemoval,0,46,0.00128849,0,Intermediate 2,2
+Inline,0,45,9.2836e-05,0,Intermediate 2,2
+OptimizeContexts,0,44,0.000100185,0,Intermediate 2,2
+OptimizeVisibility,0,43,0.000123174,0,Intermediate 2,2
+OptimizeAssumptions,1,42,0.000916614,0,Intermediate 2,2
+Cleanup,1,41,0.000617318,0,Intermediate 2,2
+ElideEnv,0,40,0.000172567,0,Intermediate 2,2
+DelayEnv,0,39,8.0504e-05,0,Intermediate 2,2
+DelayInstr,1,38,0.00019828,0,Intermediate 2,2
+Cleanup,0,37,0.000358206,0,Intermediate 2,2
+OptimizeVisibility,0,36,0.000113918,0,Intermediate 2,2
+OptimizeAssumptions,1,35,0.000668595,0,Intermediate 2,2
+Cleanup,0,34,0.00036035,0,Intermediate 2,2
+TypeInference,0,33,0.000213939,0,Intermediate 2,2
+Overflow,0,32,0.000156798,0,Intermediate 2,2
+Intermediate 2 post,0,0,6.9687e-05,0,Intermediate 2 post,2
+HoistInstruction,0,0,0.000103401,0,Intermediate 2 post,2
+LoopInvariant,0,0,8.0251e-05,0,Intermediate 2 post,2
+Cleanup FS,0,0,6.6449e-05,0,Cleanup FS,2
+CleanupFramestate,1,0,7.4049e-05,0,Cleanup FS,2
+CleanupCheckpoints,0,0,8.0666e-05,0,Cleanup FS,2
+Final,0,119,6.7751e-05,0,Final,2
+DotDotDots,0,118,6.7087e-05,0,Final,2
+EagerCalls,0,117,8.4905e-05,0,Final,2
+MatchCallArgs,0,116,6.5441e-05,0,Final,2
+InlineForcePromises,0,115,6.5223e-05,0,Final,2
+Inline,0,114,6.6728e-05,0,Final,2
+OptimizeContexts,0,113,7.1209e-05,0,Final,2
+DelayInstr,0,112,0.000145903,0,Final,2
+ForceDominance,1,111,0.000333336,0,Final,2
+ScopeResolution,1,110,0.00239773,0,Final,2
+LoadElision,1,109,0.000157485,0,Final,2
+GVN,0,108,0.000892925,0,Final,2
+Constantfold,0,107,0.000282629,0,Final,2
+DeadStoreRemoval,0,106,0.000729341,0,Final,2
+Inline,0,105,5.1691e-05,0,Final,2
+OptimizeContexts,0,104,6.5878e-05,0,Final,2
+OptimizeVisibility,0,103,7.1745e-05,0,Final,2
+OptimizeAssumptions,1,102,0.000244258,0,Final,2
+Cleanup,1,101,0.000352684,0,Final,2
+ElideEnv,0,100,9.4802e-05,0,Final,2
+DelayEnv,0,99,4.627e-05,0,Final,2
+DelayInstr,0,98,8.4207e-05,0,Final,2
+Cleanup,0,97,0.000199362,0,Final,2
+OptimizeVisibility,0,96,7.69e-05,0,Final,2
+OptimizeAssumptions,0,95,0.000223073,0,Final,2
+Cleanup,0,94,0.000208829,0,Final,2
+TypeInference,0,93,0.000130986,0,Final,2
+Overflow,0,92,8.3306e-05,0,Final,2
+ElideEnvSpec,1,91,0.00012938,0,Final,2
+CleanupCheckpoints,0,90,5.1448e-05,0,Final,2
+Final post,0,0,3.6098e-05,0,Final post,2
+HoistInstruction,0,0,6.9722e-05,0,Final post,2
+LoopInvariant,0,0,4.4949e-05,0,Final post,2
+Constantfold,0,0,0.000102165,0,Final post,2
+Cleanup,0,0,0.000194437,0,Final post,2
+CleanupCheckpoints,0,0,4.3777e-05,0,Final post,2
+done,0,0,3.9362e-05,0,done,2
+Initial,0,59,0.000998863,0,Initial,3
+TypefeedbackCleanup,0,58,0.00465383,0,Initial,3
+DotDotDots,0,57,0.000873529,0,Initial,3
+EagerCalls,0,56,0.00108538,0,Initial,3
+MatchCallArgs,0,55,0.000853272,0,Initial,3
+InlineForcePromises,0,54,0.000835081,0,Initial,3
+Inline,1,53,0.00430055,0,Initial,3
+OptimizeContexts,0,52,0.00160879,0,Initial,3
+DelayInstr,0,51,0.00261174,0,Initial,3
+ForceDominance,0,50,0.239226,0,Initial,3
+ScopeResolution,1,49,0.0444035,0,Initial,3
+LoadElision,0,48,0.00138254,0,Initial,3
+GVN,0,47,0.00714945,0,Initial,3
+Constantfold,0,46,0.0230362,0,Initial,3
+DeadStoreRemoval,0,45,0.0334961,0,Initial,3
+Inline,0,44,0.00101947,0,Initial,3
+OptimizeContexts,0,43,0.00152998,0,Initial,3
+OptimizeVisibility,1,42,0.0027016,0,Initial,3
+OptimizeAssumptions,1,41,0.0303892,0,Initial,3
+Cleanup,1,40,0.00376081,0,Initial,3
+ElideEnv,0,39,0.00171324,0,Initial,3
+DelayEnv,1,38,0.000801757,0,Initial,3
+DelayInstr,0,37,0.00199917,0,Initial,3
+Cleanup,0,36,0.00331021,0,Initial,3
+OptimizeVisibility,0,35,0.00106515,0,Initial,3
+OptimizeAssumptions,1,34,0.0167493,0,Initial,3
+Cleanup,0,33,0.00306931,0,Initial,3
+TypeInference,0,32,0.00158882,0,Initial,3
+Overflow,0,31,0.00187949,0,Initial,3
+Initial post,0,0,0.000686618,0,Initial post,3
+HoistInstruction,1,0,0.00112738,0,Initial post,3
+LoopInvariant,0,0,0.00108081,0,Initial post,3
+Speculation,0,99,0.000687255,0,Speculation,3
+TypefeedbackCleanup,0,98,0.00384088,0,Speculation,3
+ElideEnvSpec,1,97,0.0292336,0,Speculation,3
+DotDotDots,0,96,0.00079746,0,Speculation,3
+EagerCalls,0,95,0.000951663,0,Speculation,3
+MatchCallArgs,0,94,0.000765905,0,Speculation,3
+InlineForcePromises,0,93,0.000760107,0,Speculation,3
+Inline,0,92,0.000772536,0,Speculation,3
+OptimizeContexts,1,91,0.00274844,0,Speculation,3
+DelayInstr,0,90,0.00202756,0,Speculation,3
+ForceDominance,1,89,0.0820516,0,Speculation,3
+ScopeResolution,1,88,0.0270663,0,Speculation,3
+LoadElision,0,87,0.00114604,0,Speculation,3
+GVN,0,86,0.00568882,0,Speculation,3
+Constantfold,0,85,0.00780394,0,Speculation,3
+DeadStoreRemoval,1,84,0.078564,0,Speculation,3
+Inline,0,83,0.000935195,0,Speculation,3
+OptimizeContexts,0,82,0.000895435,0,Speculation,3
+OptimizeVisibility,0,81,0.0017146,0,Speculation,3
+OptimizeAssumptions,1,80,0.0328534,0,Speculation,3
+Cleanup,0,79,0.00351365,0,Speculation,3
+ElideEnv,0,78,0.00154481,0,Speculation,3
+DelayEnv,1,77,0.000730601,0,Speculation,3
+DelayInstr,1,76,0.00200909,0,Speculation,3
+Cleanup,0,75,0.00450445,0,Speculation,3
+OptimizeVisibility,0,74,0.000977916,0,Speculation,3
+OptimizeAssumptions,1,73,0.0208244,0,Speculation,3
+Cleanup,0,72,0.00448098,0,Speculation,3
+TypeInference,0,71,0.00178744,0,Speculation,3
+Overflow,0,70,0.00185629,0,Speculation,3
+TypefeedbackCleanup,0,69,0.00360298,0,Speculation,3
+TypeSpeculation,1,68,0.0221763,0,Speculation,3
+Speculation,0,67,0.000751254,1,Speculation,3
+TypefeedbackCleanup,0,66,0.00394245,1,Speculation,3
+ElideEnvSpec,1,65,0.0130888,1,Speculation,3
+DotDotDots,0,64,0.000768973,1,Speculation,3
+EagerCalls,0,63,0.000907023,1,Speculation,3
+MatchCallArgs,0,62,0.000740448,1,Speculation,3
+InlineForcePromises,0,61,0.000721923,1,Speculation,3
+Inline,0,60,0.000738782,1,Speculation,3
+OptimizeContexts,0,59,0.000801127,1,Speculation,3
+DelayInstr,0,58,0.00200988,1,Speculation,3
+ForceDominance,1,57,0.0163542,1,Speculation,3
+ScopeResolution,1,56,0.0222139,1,Speculation,3
+LoadElision,1,55,0.0025388,1,Speculation,3
+GVN,0,54,0.00945432,1,Speculation,3
+Constantfold,0,53,0.0153606,1,Speculation,3
+DeadStoreRemoval,0,52,0.0624792,1,Speculation,3
+Inline,0,51,0.000763026,1,Speculation,3
+OptimizeContexts,0,50,0.000725726,1,Speculation,3
+OptimizeVisibility,0,49,0.000930806,1,Speculation,3
+OptimizeAssumptions,1,48,0.0317691,1,Speculation,3
+Cleanup,0,47,0.0116998,1,Speculation,3
+ElideEnv,0,46,0.00111655,1,Speculation,3
+DelayEnv,0,45,0.000531748,1,Speculation,3
+DelayInstr,0,44,0.00120095,1,Speculation,3
+Cleanup,0,43,0.00314277,1,Speculation,3
+OptimizeVisibility,0,42,0.000711274,1,Speculation,3
+OptimizeAssumptions,0,41,0.0124475,1,Speculation,3
+Cleanup,0,40,0.00315108,1,Speculation,3
+TypeInference,0,39,0.00139252,1,Speculation,3
+Overflow,0,38,0.00117909,1,Speculation,3
+TypefeedbackCleanup,0,37,0.00253833,1,Speculation,3
+TypeSpeculation,0,36,0.00168465,1,Speculation,3
+Speculation post,0,0,0.000486612,0,Speculation post,3
+HoistInstruction,1,0,0.000781276,0,Speculation post,3
+LoopInvariant,0,0,0.00069095,0,Speculation post,3
+Remove CP,0,0,0.000474645,0,Remove CP,3
+CleanupCheckpoints,1,0,0.000510648,0,Remove CP,3
+HoistInstruction,1,0,0.000598287,0,Remove CP,3
+LoopInvariant,0,0,0.000515016,0,Remove CP,3
+Intermediate 2,0,59,0.000334632,0,Intermediate 2,3
+DotDotDots,0,58,0.000359056,0,Intermediate 2,3
+EagerCalls,0,57,0.000449392,0,Intermediate 2,3
+MatchCallArgs,0,56,0.000357914,0,Intermediate 2,3
+InlineForcePromises,0,55,0.000356734,0,Intermediate 2,3
+Inline,0,54,0.000367449,0,Intermediate 2,3
+OptimizeContexts,0,53,0.000402892,0,Intermediate 2,3
+DelayInstr,0,52,0.000798945,0,Intermediate 2,3
+ForceDominance,1,51,0.00391621,0,Intermediate 2,3
+ScopeResolution,0,50,0.00914155,0,Intermediate 2,3
+LoadElision,0,49,0.000645838,0,Intermediate 2,3
+GVN,0,48,0.00253173,0,Intermediate 2,3
+Constantfold,0,47,0.00210966,0,Intermediate 2,3
+DeadStoreRemoval,1,46,0.0113349,0,Intermediate 2,3
+Inline,0,45,0.000379645,0,Intermediate 2,3
+OptimizeContexts,0,44,0.000403601,0,Intermediate 2,3
+OptimizeVisibility,0,43,0.000493207,0,Intermediate 2,3
+OptimizeAssumptions,1,42,0.00736647,0,Intermediate 2,3
+Cleanup,1,41,0.00203638,0,Intermediate 2,3
+ElideEnv,0,40,0.000688278,0,Intermediate 2,3
+DelayEnv,0,39,0.000331553,0,Intermediate 2,3
+DelayInstr,1,38,0.000862815,0,Intermediate 2,3
+Cleanup,0,37,0.0016275,0,Intermediate 2,3
+OptimizeVisibility,0,36,0.000438332,0,Intermediate 2,3
+OptimizeAssumptions,1,35,0.00446876,0,Intermediate 2,3
+Cleanup,0,34,0.00164105,0,Intermediate 2,3
+TypeInference,0,33,0.00104262,0,Intermediate 2,3
+Overflow,0,32,0.00138393,0,Intermediate 2,3
+Intermediate 2 post,0,0,0.000306194,0,Intermediate 2 post,3
+HoistInstruction,1,0,0.000476071,0,Intermediate 2 post,3
+LoopInvariant,0,0,0.000391195,0,Intermediate 2 post,3
+Cleanup FS,0,0,0.000295059,0,Cleanup FS,3
+CleanupFramestate,1,0,0.000317888,0,Cleanup FS,3
+CleanupCheckpoints,0,0,0.000341886,0,Cleanup FS,3
+Final,0,119,0.00028658,0,Final,3
+DotDotDots,0,118,0.000305253,0,Final,3
+EagerCalls,0,117,0.000377543,0,Final,3
+MatchCallArgs,0,116,0.00030577,0,Final,3
+InlineForcePromises,0,115,0.000302678,0,Final,3
+Inline,0,114,0.000309026,0,Final,3
+OptimizeContexts,0,113,0.00032836,0,Final,3
+DelayInstr,0,112,0.000695174,0,Final,3
+ForceDominance,1,111,0.00233017,0,Final,3
+ScopeResolution,1,110,0.00765222,0,Final,3
+LoadElision,1,109,0.000586154,0,Final,3
+GVN,0,108,0.00243657,0,Final,3
+Constantfold,0,107,0.00102991,0,Final,3
+DeadStoreRemoval,0,106,0.00669498,0,Final,3
+Inline,0,105,0.000294131,0,Final,3
+OptimizeContexts,0,104,0.000309048,0,Final,3
+OptimizeVisibility,0,103,0.000375154,0,Final,3
+OptimizeAssumptions,1,102,0.00412271,0,Final,3
+Cleanup,1,101,0.00208647,0,Final,3
+ElideEnv,0,100,0.0005704,0,Final,3
+DelayEnv,0,99,0.000275641,0,Final,3
+DelayInstr,0,98,0.000602906,0,Final,3
+Cleanup,0,97,0.00136149,0,Final,3
+OptimizeVisibility,0,96,0.000377228,0,Final,3
+OptimizeAssumptions,1,95,0.00386086,0,Final,3
+Cleanup,0,94,0.00135146,0,Final,3
+TypeInference,0,93,0.000955756,0,Final,3
+Overflow,0,92,0.000596295,0,Final,3
+ElideEnvSpec,1,91,0.00072834,0,Final,3
+CleanupCheckpoints,0,90,0.000307863,0,Final,3
+Final post,0,0,0.000249513,0,Final post,3
+HoistInstruction,0,0,0.000409915,0,Final post,3
+LoopInvariant,1,0,0.000376347,0,Final post,3
+Constantfold,0,0,0.000904863,0,Final post,3
+Cleanup,0,0,0.0012203,0,Final post,3
+CleanupCheckpoints,0,0,0.000297001,0,Final post,3
+done,0,0,0.000246892,0,done,3
+Initial,0,59,0.00148105,0,Initial,4
+TypefeedbackCleanup,0,58,0.00126417,0,Initial,4
+DotDotDots,0,57,0.00124963,0,Initial,4
+EagerCalls,1,56,0.00163814,0,Initial,4
+MatchCallArgs,0,55,0.00124184,0,Initial,4
+InlineForcePromises,0,54,0.00121469,0,Initial,4
+Inline,1,53,0.00812359,0,Initial,4
+OptimizeContexts,0,52,0.00257191,0,Initial,4
+DelayInstr,1,51,0.003666,0,Initial,4
+ForceDominance,1,50,0.419439,0,Initial,4
+ScopeResolution,1,49,0.125007,0,Initial,4
+LoadElision,0,48,0.00217772,0,Initial,4
+GVN,0,47,0.0125661,0,Initial,4
+Constantfold,0,46,0.0332926,0,Initial,4
+DeadStoreRemoval,0,45,0.0552348,0,Initial,4
+Inline,0,44,0.00164582,0,Initial,4
+OptimizeContexts,0,43,0.00236753,0,Initial,4
+OptimizeVisibility,1,42,0.00389322,0,Initial,4
+OptimizeAssumptions,1,41,0.0444183,0,Initial,4
+Cleanup,1,40,0.0061841,0,Initial,4
+ElideEnv,0,39,0.00259922,0,Initial,4
+DelayEnv,1,38,0.00117063,0,Initial,4
+DelayInstr,0,37,0.00273189,0,Initial,4
+Cleanup,0,36,0.00486934,0,Initial,4
+OptimizeVisibility,0,35,0.00165352,0,Initial,4
+OptimizeAssumptions,1,34,0.0224199,0,Initial,4
+Cleanup,0,33,0.00462901,0,Initial,4
+TypeInference,0,32,0.00190007,0,Initial,4
+Overflow,0,31,0.00253865,0,Initial,4
+Initial post,0,0,0.0009846,0,Initial post,4
+HoistInstruction,1,0,0.00161448,0,Initial post,4
+LoopInvariant,0,0,0.00178992,0,Initial post,4
+Speculation,0,99,0.000972474,0,Speculation,4
+TypefeedbackCleanup,0,98,0.000969413,0,Speculation,4
+ElideEnvSpec,1,97,0.0492793,0,Speculation,4
+DotDotDots,0,96,0.00124288,0,Speculation,4
+EagerCalls,0,95,0.00158236,0,Speculation,4
+MatchCallArgs,0,94,0.001086,0,Speculation,4
+InlineForcePromises,0,93,0.00108202,0,Speculation,4
+Inline,0,92,0.00112336,0,Speculation,4
+OptimizeContexts,1,91,0.00438983,0,Speculation,4
+DelayInstr,0,90,0.00269673,0,Speculation,4
+ForceDominance,1,89,0.19406,0,Speculation,4
+ScopeResolution,1,88,0.0778578,0,Speculation,4
+LoadElision,0,87,0.00176892,0,Speculation,4
+GVN,0,86,0.00824528,0,Speculation,4
+Constantfold,0,85,0.0108817,0,Speculation,4
+DeadStoreRemoval,1,84,0.123646,0,Speculation,4
+Inline,0,83,0.00137307,0,Speculation,4
+OptimizeContexts,1,82,0.00213581,0,Speculation,4
+OptimizeVisibility,0,81,0.00244181,0,Speculation,4
+OptimizeAssumptions,1,80,0.0578698,0,Speculation,4
+Cleanup,1,79,0.00602983,0,Speculation,4
+ElideEnv,1,78,0.00224119,0,Speculation,4
+DelayEnv,1,77,0.00105511,0,Speculation,4
+DelayInstr,1,76,0.00275645,0,Speculation,4
+Cleanup,1,75,0.00780334,0,Speculation,4
+OptimizeVisibility,0,74,0.00146839,0,Speculation,4
+OptimizeAssumptions,1,73,0.0379193,0,Speculation,4
+Cleanup,1,72,0.00778944,0,Speculation,4
+TypeInference,0,71,0.0020658,0,Speculation,4
+Overflow,0,70,0.00263207,0,Speculation,4
+TypefeedbackCleanup,0,69,0.000959043,0,Speculation,4
+TypeSpeculation,1,68,0.0389165,0,Speculation,4
+Speculation,0,67,0.00113358,1,Speculation,4
+TypefeedbackCleanup,0,66,0.00104336,1,Speculation,4
+ElideEnvSpec,1,65,0.0232993,1,Speculation,4
+DotDotDots,0,64,0.00109944,1,Speculation,4
+EagerCalls,0,63,0.00126435,1,Speculation,4
+MatchCallArgs,0,62,0.00102621,1,Speculation,4
+InlineForcePromises,0,61,0.00101337,1,Speculation,4
+Inline,0,60,0.00105419,1,Speculation,4
+OptimizeContexts,0,59,0.00111167,1,Speculation,4
+DelayInstr,0,58,0.00257659,1,Speculation,4
+ForceDominance,1,57,0.0470616,1,Speculation,4
+ScopeResolution,1,56,0.0573774,1,Speculation,4
+LoadElision,1,55,0.00342968,1,Speculation,4
+GVN,1,54,0.0116914,1,Speculation,4
+Constantfold,1,53,0.0193909,1,Speculation,4
+DeadStoreRemoval,0,52,0.0941452,1,Speculation,4
+Inline,0,51,0.00114495,1,Speculation,4
+OptimizeContexts,0,50,0.00104201,1,Speculation,4
+OptimizeVisibility,0,49,0.00186578,1,Speculation,4
+OptimizeAssumptions,1,48,0.0504857,1,Speculation,4
+Cleanup,1,47,0.0157515,1,Speculation,4
+ElideEnv,0,46,0.00171285,1,Speculation,4
+DelayEnv,1,45,0.000806869,1,Speculation,4
+DelayInstr,0,44,0.00171481,1,Speculation,4
+Cleanup,0,43,0.00589458,1,Speculation,4
+OptimizeVisibility,0,42,0.00115503,1,Speculation,4
+OptimizeAssumptions,0,41,0.0246851,1,Speculation,4
+Cleanup,0,40,0.00589037,1,Speculation,4
+TypeInference,0,39,0.00169718,1,Speculation,4
+Overflow,0,38,0.00169615,1,Speculation,4
+TypefeedbackCleanup,0,37,0.000725077,1,Speculation,4
+TypeSpeculation,0,36,0.00237941,1,Speculation,4
+Speculation post,0,0,0.000741834,0,Speculation post,4
+HoistInstruction,1,0,0.00119907,0,Speculation post,4
+LoopInvariant,0,0,0.00115483,0,Speculation post,4
+Remove CP,0,0,0.00072468,0,Remove CP,4
+CleanupCheckpoints,1,0,0.00083978,0,Remove CP,4
+HoistInstruction,1,0,0.000835333,0,Remove CP,4
+LoopInvariant,0,0,0.00084555,0,Remove CP,4
+Intermediate 2,0,59,0.000483957,0,Intermediate 2,4
+DotDotDots,0,58,0.000520135,0,Intermediate 2,4
+EagerCalls,0,57,0.00065335,0,Intermediate 2,4
+MatchCallArgs,0,56,0.000518277,0,Intermediate 2,4
+InlineForcePromises,0,55,0.000513009,0,Intermediate 2,4
+Inline,0,54,0.000536044,0,Intermediate 2,4
+OptimizeContexts,0,53,0.000578023,0,Intermediate 2,4
+DelayInstr,0,52,0.00106946,0,Intermediate 2,4
+ForceDominance,1,51,0.0107141,0,Intermediate 2,4
+ScopeResolution,1,50,0.0280918,0,Intermediate 2,4
+LoadElision,1,49,0.000923767,0,Intermediate 2,4
+GVN,0,48,0.00331918,0,Intermediate 2,4
+Constantfold,1,47,0.00300683,0,Intermediate 2,4
+DeadStoreRemoval,0,46,0.0188969,0,Intermediate 2,4
+Inline,0,45,0.000594321,0,Intermediate 2,4
+OptimizeContexts,0,44,0.000591871,0,Intermediate 2,4
+OptimizeVisibility,0,43,0.000891439,0,Intermediate 2,4
+OptimizeAssumptions,1,42,0.0153266,0,Intermediate 2,4
+Cleanup,1,41,0.00463967,0,Intermediate 2,4
+ElideEnv,0,40,0.000997647,0,Intermediate 2,4
+DelayEnv,0,39,0.000459602,0,Intermediate 2,4
+DelayInstr,1,38,0.00112645,0,Intermediate 2,4
+Cleanup,1,37,0.00238583,0,Intermediate 2,4
+OptimizeVisibility,0,36,0.000637944,0,Intermediate 2,4
+OptimizeAssumptions,1,35,0.00814945,0,Intermediate 2,4
+Cleanup,1,34,0.00254885,0,Intermediate 2,4
+TypeInference,0,33,0.00114686,0,Intermediate 2,4
+Overflow,0,32,0.000941073,0,Intermediate 2,4
+Intermediate 2 post,0,0,0.000414196,0,Intermediate 2 post,4
+HoistInstruction,0,0,0.000627064,0,Intermediate 2 post,4
+LoopInvariant,0,0,0.000569646,0,Intermediate 2 post,4
+Cleanup FS,0,0,0.000403159,0,Cleanup FS,4
+CleanupFramestate,1,0,0.000437784,0,Cleanup FS,4
+CleanupCheckpoints,1,0,0.000468592,0,Cleanup FS,4
+Final,0,119,0.000378443,0,Final,4
+DotDotDots,0,118,0.000409717,0,Final,4
+EagerCalls,1,117,0.000661476,0,Final,4
+MatchCallArgs,1,116,0.00147767,0,Final,4
+InlineForcePromises,0,115,0.00042111,0,Final,5
+Inline,0,114,0.000483655,0,Final,5
+OptimizeContexts,0,113,0.000447621,0,Final,5
+DelayInstr,0,112,0.000903146,0,Final,5
+ForceDominance,1,111,0.00660382,0,Final,5
+ScopeResolution,1,110,0.0152915,0,Final,5
+LoadElision,1,109,0.00126905,0,Final,5
+GVN,0,108,0.00443865,0,Final,5
+Constantfold,0,107,0.0017915,0,Final,5
+DeadStoreRemoval,1,106,0.00630181,0,Final,5
+Inline,0,105,0.000413339,0,Final,5
+OptimizeContexts,0,104,0.000410823,0,Final,5
+OptimizeVisibility,0,103,0.000595751,0,Final,5
+OptimizeAssumptions,1,102,0.0068797,0,Final,5
+Cleanup,1,101,0.00253754,0,Final,5
+ElideEnv,1,100,0.000811563,0,Final,5
+DelayEnv,1,99,0.000366531,0,Final,5
+DelayInstr,1,98,0.000769777,0,Final,5
+Cleanup,1,97,0.00194946,0,Final,5
+OptimizeVisibility,0,96,0.000543175,0,Final,5
+OptimizeAssumptions,1,95,0.00659547,0,Final,5
+Cleanup,0,94,0.00177093,0,Final,5
+TypeInference,0,93,0.00100247,0,Final,5
+Overflow,0,92,0.000735876,0,Final,5
+ElideEnvSpec,1,91,0.0016933,0,Final,5
+CleanupCheckpoints,1,90,0.000417105,0,Final,5
+Final,0,89,0.000329431,1,Final,5
+DotDotDots,0,88,0.000358748,1,Final,5
+EagerCalls,0,87,0.000432103,1,Final,5
+MatchCallArgs,0,86,0.000356904,1,Final,5
+InlineForcePromises,0,85,0.000344767,1,Final,5
+Inline,0,84,0.000361882,1,Final,5
+OptimizeContexts,0,83,0.000381046,1,Final,5
+DelayInstr,0,82,0.000732173,1,Final,5
+ForceDominance,1,81,0.00430113,1,Final,5
+ScopeResolution,1,80,0.0120748,1,Final,5
+LoadElision,1,79,0.000795693,1,Final,5
+GVN,0,78,0.00261675,1,Final,5
+Constantfold,1,77,0.00161952,1,Final,5
+DeadStoreRemoval,1,76,0.00563243,1,Final,5
+Inline,0,75,0.000369359,1,Final,5
+OptimizeContexts,0,74,0.000381921,1,Final,5
+OptimizeVisibility,1,73,0.000557795,1,Final,5
+OptimizeAssumptions,1,72,0.00572305,1,Final,5
+Cleanup,1,71,0.00214071,1,Final,5
+ElideEnv,0,70,0.000735933,1,Final,5
+DelayEnv,1,69,0.000338648,1,Final,5
+DelayInstr,0,68,0.000700848,1,Final,5
+Cleanup,1,67,0.0016465,1,Final,5
+OptimizeVisibility,0,66,0.000506416,1,Final,5
+OptimizeAssumptions,0,65,0.00551817,1,Final,5
+Cleanup,0,64,0.00166408,1,Final,5
+TypeInference,0,63,0.000950855,1,Final,5
+Overflow,0,62,0.000684692,1,Final,5
+ElideEnvSpec,0,61,0.000833191,1,Final,5
+CleanupCheckpoints,1,60,0.000382963,1,Final,5
+Final,0,59,0.000306607,2,Final,5
+DotDotDots,0,58,0.000327873,2,Final,5
+EagerCalls,1,57,0.000514292,2,Final,5
+MatchCallArgs,0,56,0.000338644,2,Final,5
+InlineForcePromises,0,55,0.000327969,2,Final,5
+Inline,0,54,0.000344814,2,Final,5
+OptimizeContexts,0,53,0.000360605,2,Final,5
+DelayInstr,0,52,0.000702212,2,Final,5
+ForceDominance,1,51,0.00382739,2,Final,5
+ScopeResolution,1,50,0.00955453,2,Final,5
+LoadElision,1,49,0.000731351,2,Final,5
+GVN,0,48,0.00228438,2,Final,5
+Constantfold,0,47,0.00159138,2,Final,5
+DeadStoreRemoval,0,46,0.00540355,2,Final,5
+Inline,0,45,0.000356491,2,Final,5
+OptimizeContexts,0,44,0.00040019,2,Final,5
+OptimizeVisibility,0,43,0.000542871,2,Final,5
+OptimizeAssumptions,1,42,0.00517669,2,Final,5
+Cleanup,1,41,0.00216542,2,Final,5
+ElideEnv,1,40,0.000732521,2,Final,5
+DelayEnv,0,39,0.000330449,2,Final,5
+DelayInstr,0,38,0.000670124,2,Final,5
+Cleanup,0,37,0.00161595,2,Final,5
+OptimizeVisibility,0,36,0.000497763,2,Final,5
+OptimizeAssumptions,0,35,0.00496733,2,Final,5
+Cleanup,0,34,0.00162595,2,Final,5
+TypeInference,0,33,0.000934642,2,Final,5
+Overflow,0,32,0.000676484,2,Final,5
+ElideEnvSpec,1,31,0.000801855,2,Final,5
+CleanupCheckpoints,0,30,0.000373681,2,Final,5
+Final post,0,0,0.000299948,0,Final post,5
+HoistInstruction,1,0,0.00049746,0,Final post,5
+LoopInvariant,0,0,0.000434493,0,Final post,5
+Constantfold,1,0,0.0010458,0,Final post,5
+Cleanup,1,0,0.00161873,0,Final post,5
+CleanupCheckpoints,0,0,0.000367643,0,Final post,5
+done,0,0,0.000299472,0,done,5
+Initial,0,59,0.001501,0,Initial,6
+TypefeedbackCleanup,0,58,0.00127723,0,Initial,6
+DotDotDots,0,57,0.00127657,0,Initial,6
+EagerCalls,0,56,0.00159599,0,Initial,6
+MatchCallArgs,0,55,0.00123657,0,Initial,6
+InlineForcePromises,0,54,0.00120127,0,Initial,6
+Inline,1,53,0.00538767,0,Initial,6
+OptimizeContexts,0,52,0.0025332,0,Initial,6
+DelayInstr,1,51,0.00353392,0,Initial,6
+ForceDominance,1,50,0.389996,0,Initial,6
+ScopeResolution,1,49,0.0821705,0,Initial,6
+LoadElision,0,48,0.00207551,0,Initial,6
+GVN,1,47,0.00979845,0,Initial,6
+Constantfold,1,46,0.0288173,0,Initial,6
+DeadStoreRemoval,0,45,0.0462168,0,Initial,6
+Inline,0,44,0.00162759,0,Initial,6
+OptimizeContexts,0,43,0.00226243,0,Initial,6
+OptimizeVisibility,1,42,0.00383455,0,Initial,6
+OptimizeAssumptions,1,41,0.0401589,0,Initial,6
+Cleanup,1,40,0.00596491,0,Initial,6
+ElideEnv,0,39,0.00247715,0,Initial,6
+DelayEnv,1,38,0.00112076,0,Initial,6
+DelayInstr,0,37,0.00262206,0,Initial,6
+Cleanup,1,36,0.00471888,0,Initial,6
+OptimizeVisibility,0,35,0.00159925,0,Initial,6
+OptimizeAssumptions,1,34,0.0195997,0,Initial,6
+Cleanup,1,33,0.00470877,0,Initial,6
+TypeInference,0,32,0.00189443,0,Initial,6
+Overflow,0,31,0.00248532,0,Initial,6
+Initial post,0,0,0.000965672,0,Initial post,6
+HoistInstruction,1,0,0.00159303,0,Initial post,6
+LoopInvariant,0,0,0.00172605,0,Initial post,6
+Speculation,0,99,0.000951245,0,Speculation,6
+TypefeedbackCleanup,0,98,0.000946459,0,Speculation,6
+ElideEnvSpec,1,97,0.0451651,0,Speculation,6
+DotDotDots,0,96,0.00127733,0,Speculation,6
+EagerCalls,0,95,0.00157931,0,Speculation,6
+MatchCallArgs,0,94,0.00106351,0,Speculation,6
+InlineForcePromises,0,93,0.00105434,0,Speculation,6
+Inline,0,92,0.00110249,0,Speculation,6
+OptimizeContexts,1,91,0.00321304,0,Speculation,6
+DelayInstr,0,90,0.00264045,0,Speculation,6
+ForceDominance,1,89,0.172974,0,Speculation,6
+ScopeResolution,1,88,0.0609454,0,Speculation,6
+LoadElision,0,87,0.00170247,0,Speculation,6
+GVN,0,86,0.00816206,0,Speculation,6
+Constantfold,1,85,0.00927816,0,Speculation,6
+DeadStoreRemoval,1,84,0.0657775,0,Speculation,6
+Inline,0,83,0.00134383,0,Speculation,6
+OptimizeContexts,1,82,0.00205539,0,Speculation,6
+OptimizeVisibility,1,81,0.00243334,0,Speculation,6
+OptimizeAssumptions,1,80,0.050061,0,Speculation,6
+Cleanup,1,79,0.00562239,0,Speculation,6
+ElideEnv,1,78,0.00217112,0,Speculation,6
+DelayEnv,1,77,0.000997558,0,Speculation,6
+DelayInstr,1,76,0.00260755,0,Speculation,6
+Cleanup,1,75,0.00593032,0,Speculation,6
+OptimizeVisibility,0,74,0.00143864,0,Speculation,6
+OptimizeAssumptions,1,73,0.0343504,0,Speculation,6
+Cleanup,1,72,0.00615639,0,Speculation,6
+TypeInference,0,71,0.00203633,0,Speculation,6
+Overflow,0,70,0.00236461,0,Speculation,6
+TypefeedbackCleanup,0,69,0.000908113,0,Speculation,6
+TypeSpeculation,1,68,0.0365256,0,Speculation,6
+Speculation,0,67,0.00113244,1,Speculation,6
+TypefeedbackCleanup,0,66,0.000986645,1,Speculation,6
+ElideEnvSpec,1,65,0.0216501,1,Speculation,6
+DotDotDots,0,64,0.00106147,1,Speculation,6
+EagerCalls,0,63,0.00122896,1,Speculation,6
+MatchCallArgs,0,62,0.000991425,1,Speculation,6
+InlineForcePromises,0,61,0.000973678,1,Speculation,6
+Inline,0,60,0.00102007,1,Speculation,6
+OptimizeContexts,0,59,0.00108017,1,Speculation,6
+DelayInstr,0,58,0.00249997,1,Speculation,6
+ForceDominance,1,57,0.0398114,1,Speculation,6
+ScopeResolution,1,56,0.0444735,1,Speculation,6
+LoadElision,1,55,0.00321032,1,Speculation,6
+GVN,1,54,0.0114486,1,Speculation,6
+Constantfold,1,53,0.0173154,1,Speculation,6
+DeadStoreRemoval,0,52,0.0513651,1,Speculation,6
+Inline,0,51,0.00110387,1,Speculation,6
+OptimizeContexts,0,50,0.00102504,1,Speculation,6
+OptimizeVisibility,0,49,0.00182484,1,Speculation,6
+OptimizeAssumptions,1,48,0.0470127,1,Speculation,6
+Cleanup,1,47,0.0135439,1,Speculation,6
+ElideEnv,0,46,0.00165952,1,Speculation,6
+DelayEnv,1,45,0.000766556,1,Speculation,6
+DelayInstr,0,44,0.00162517,1,Speculation,6
+Cleanup,0,43,0.00442141,1,Speculation,6
+OptimizeVisibility,0,42,0.0011476,1,Speculation,6
+OptimizeAssumptions,0,41,0.0225985,1,Speculation,6
+Cleanup,0,40,0.00450653,1,Speculation,6
+TypeInference,0,39,0.0016535,1,Speculation,6
+Overflow,0,38,0.00161666,1,Speculation,6
+TypefeedbackCleanup,0,37,0.000713146,1,Speculation,6
+TypeSpeculation,0,36,0.00226836,1,Speculation,6
+Speculation post,0,0,0.000706185,0,Speculation post,6
+HoistInstruction,1,0,0.0011585,0,Speculation post,6
+LoopInvariant,0,0,0.00110753,0,Speculation post,6
+Remove CP,0,0,0.000690323,0,Remove CP,6
+CleanupCheckpoints,1,0,0.000815569,0,Remove CP,6
+HoistInstruction,1,0,0.000835799,0,Remove CP,6
+LoopInvariant,0,0,0.000822167,0,Remove CP,6
+Intermediate 2,0,59,0.000468965,0,Intermediate 2,6
+DotDotDots,0,58,0.000495414,0,Intermediate 2,6
+EagerCalls,0,57,0.000644114,0,Intermediate 2,6
+MatchCallArgs,0,56,0.000502806,0,Intermediate 2,6
+InlineForcePromises,0,55,0.000488037,0,Intermediate 2,6
+Inline,0,54,0.000528753,0,Intermediate 2,6
+OptimizeContexts,0,53,0.000570709,0,Intermediate 2,6
+DelayInstr,0,52,0.00105131,0,Intermediate 2,6
+ForceDominance,1,51,0.00994774,0,Intermediate 2,6
+ScopeResolution,1,50,0.0173219,0,Intermediate 2,6
+LoadElision,0,49,0.000852198,0,Intermediate 2,6
+GVN,0,48,0.00324655,0,Intermediate 2,6
+Constantfold,1,47,0.00281263,0,Intermediate 2,6
+DeadStoreRemoval,0,46,0.0127312,0,Intermediate 2,6
+Inline,0,45,0.000548793,0,Intermediate 2,6
+OptimizeContexts,0,44,0.000576227,0,Intermediate 2,6
+OptimizeVisibility,0,43,0.000880177,0,Intermediate 2,6
+OptimizeAssumptions,1,42,0.0146475,0,Intermediate 2,6
+Cleanup,1,41,0.00363962,0,Intermediate 2,6
+ElideEnv,0,40,0.000979939,0,Intermediate 2,6
+DelayEnv,0,39,0.000447918,0,Intermediate 2,6
+DelayInstr,1,38,0.00108033,0,Intermediate 2,6
+Cleanup,1,37,0.00217141,0,Intermediate 2,6
+OptimizeVisibility,0,36,0.000639743,0,Intermediate 2,6
+OptimizeAssumptions,1,35,0.00813304,0,Intermediate 2,6
+Cleanup,1,34,0.0021393,0,Intermediate 2,6
+TypeInference,0,33,0.00115416,0,Intermediate 2,6
+Overflow,0,32,0.000942114,0,Intermediate 2,6
+Intermediate 2 post,0,0,0.000408746,0,Intermediate 2 post,6
+HoistInstruction,0,0,0.000627816,0,Intermediate 2 post,6
+LoopInvariant,0,0,0.000580703,0,Intermediate 2 post,6
+Cleanup FS,0,0,0.000400672,0,Cleanup FS,6
+CleanupFramestate,1,0,0.000432309,0,Cleanup FS,6
+CleanupCheckpoints,1,0,0.00046876,0,Cleanup FS,6
+Final,0,119,0.00038281,0,Final,6
+DotDotDots,0,118,0.000407307,0,Final,6
+EagerCalls,1,117,0.000727981,0,Final,6
+MatchCallArgs,1,116,0.000908999,0,Final,6
+InlineForcePromises,0,115,0.000423358,0,Final,7
+Inline,0,114,0.000430479,0,Final,7
+OptimizeContexts,0,113,0.000453023,0,Final,7
+DelayInstr,0,112,0.000923335,0,Final,7
+ForceDominance,1,111,0.00859076,0,Final,7
+ScopeResolution,1,110,0.0144466,0,Final,7
+LoadElision,1,109,0.000837722,0,Final,7
+GVN,0,108,0.00279943,0,Final,7
+Constantfold,0,107,0.00143527,0,Final,7
+DeadStoreRemoval,1,106,0.00559896,0,Final,7
+Inline,0,105,0.000424538,0,Final,7
+OptimizeContexts,0,104,0.000430363,0,Final,7
+OptimizeVisibility,0,103,0.00071046,0,Final,7
+OptimizeAssumptions,1,102,0.00805886,0,Final,7
+Cleanup,1,101,0.0022145,0,Final,7
+ElideEnv,1,100,0.000838329,0,Final,7
+DelayEnv,1,99,0.000392534,0,Final,7
+DelayInstr,1,98,0.000827357,0,Final,7
+Cleanup,1,97,0.00198668,0,Final,7
+OptimizeVisibility,0,96,0.000599446,0,Final,7
+OptimizeAssumptions,1,95,0.00756461,0,Final,7
+Cleanup,0,94,0.00182757,0,Final,7
+TypeInference,0,93,0.00107162,0,Final,7
+Overflow,0,92,0.000810108,0,Final,7
+ElideEnvSpec,0,91,0.00169896,0,Final,7
+CleanupCheckpoints,0,90,0.000437338,0,Final,7
+Final post,0,0,0.000349616,0,Final post,7
+HoistInstruction,1,0,0.000569479,0,Final post,7
+LoopInvariant,0,0,0.000511909,0,Final post,7
+Constantfold,1,0,0.00125549,0,Final post,7
+Cleanup,0,0,0.00178881,0,Final post,7
+CleanupCheckpoints,0,0,0.000427551,0,Final post,7
+done,0,0,0.000346743,0,done,7
+Initial,0,59,0.000135181,0,Initial,8
+TypefeedbackCleanup,0,58,0.000115059,0,Initial,8
+DotDotDots,0,57,0.000122545,0,Initial,8
+EagerCalls,0,56,0.000164703,0,Initial,8
+MatchCallArgs,0,55,0.000123303,0,Initial,8
+InlineForcePromises,0,54,0.000119905,0,Initial,8
+Inline,1,53,0.000244787,0,Initial,8
+OptimizeContexts,0,52,0.000173966,0,Initial,8
+DelayInstr,1,51,0.000255014,0,Initial,8
+ForceDominance,1,50,0.000888616,0,Initial,8
+ScopeResolution,1,49,0.00206866,0,Initial,8
+LoadElision,0,48,0.000213528,0,Initial,8
+GVN,0,47,0.000731266,0,Initial,8
+Constantfold,0,46,0.000547963,0,Initial,8
+DeadStoreRemoval,0,45,0.00178632,0,Initial,8
+Inline,0,44,0.000138639,0,Initial,8
+OptimizeContexts,0,43,0.000176315,0,Initial,8
+OptimizeVisibility,0,42,0.00029464,0,Initial,8
+OptimizeAssumptions,1,41,0.000625329,0,Initial,8
+Cleanup,1,40,0.000479933,0,Initial,8
+ElideEnv,0,39,0.000226911,0,Initial,8
+DelayEnv,1,38,0.000115055,0,Initial,8
+DelayInstr,0,37,0.000169466,0,Initial,8
+Cleanup,0,36,0.000369733,0,Initial,8
+OptimizeVisibility,0,35,0.000193,0,Initial,8
+OptimizeAssumptions,1,34,0.000366103,0,Initial,8
+Cleanup,0,33,0.000366685,0,Initial,8
+TypeInference,0,32,0.000216576,0,Initial,8
+Overflow,0,31,0.00016908,0,Initial,8
+Initial post,0,0,8.8467e-05,0,Initial post,8
+HoistInstruction,1,0,0.000170473,0,Initial post,8
+LoopInvariant,0,0,0.000120108,0,Initial post,8
+Speculation,0,99,8.6077e-05,0,Speculation,8
+TypefeedbackCleanup,0,98,8.521e-05,0,Speculation,8
+ElideEnvSpec,1,97,0.00044617,0,Speculation,8
+DotDotDots,0,96,0.000104165,0,Speculation,8
+EagerCalls,0,95,0.000138567,0,Speculation,8
+MatchCallArgs,0,94,9.7393e-05,0,Speculation,8
+InlineForcePromises,0,93,9.6419e-05,0,Speculation,8
+Inline,0,92,9.9141e-05,0,Speculation,8
+OptimizeContexts,0,91,0.000109889,0,Speculation,8
+DelayInstr,0,90,0.000168262,0,Speculation,8
+ForceDominance,1,89,0.000560994,0,Speculation,8
+ScopeResolution,1,88,0.00218575,0,Speculation,8
+LoadElision,0,87,0.000162021,0,Speculation,8
+GVN,0,86,0.000576434,0,Speculation,8
+Constantfold,0,85,0.000351115,0,Speculation,8
+DeadStoreRemoval,1,84,0.000605667,0,Speculation,8
+Inline,0,83,9.7171e-05,0,Speculation,8
+OptimizeContexts,0,82,0.000129158,0,Speculation,8
+OptimizeVisibility,0,81,0.000171257,0,Speculation,8
+OptimizeAssumptions,1,80,0.000369556,0,Speculation,8
+Cleanup,1,79,0.000378338,0,Speculation,8
+ElideEnv,1,78,0.000202992,0,Speculation,8
+DelayEnv,1,77,9.482e-05,0,Speculation,8
+DelayInstr,1,76,0.000169186,0,Speculation,8
+Cleanup,1,75,0.000349986,0,Speculation,8
+OptimizeVisibility,0,74,0.000161272,0,Speculation,8
+OptimizeAssumptions,1,73,0.000357813,0,Speculation,8
+Cleanup,1,72,0.00035234,0,Speculation,8
+TypeInference,0,71,0.00019679,0,Speculation,8
+Overflow,0,70,0.000152483,0,Speculation,8
+TypefeedbackCleanup,0,69,7.9323e-05,0,Speculation,8
+TypeSpeculation,1,68,0.000357924,0,Speculation,8
+Speculation,0,67,8.1494e-05,1,Speculation,8
+TypefeedbackCleanup,0,66,7.806e-05,1,Speculation,8
+ElideEnvSpec,1,65,0.000232122,1,Speculation,8
+DotDotDots,0,64,8.7848e-05,1,Speculation,8
+EagerCalls,0,63,0.000110496,1,Speculation,8
+MatchCallArgs,0,62,8.4455e-05,1,Speculation,8
+InlineForcePromises,0,61,8.3142e-05,1,Speculation,8
+Inline,0,60,8.614e-05,1,Speculation,8
+OptimizeContexts,0,59,9.5214e-05,1,Speculation,8
+DelayInstr,0,58,0.000144875,1,Speculation,8
+ForceDominance,1,57,0.000422728,1,Speculation,8
+ScopeResolution,0,56,0.00185423,1,Speculation,8
+LoadElision,0,55,0.000139067,1,Speculation,8
+GVN,1,54,0.00049593,1,Speculation,8
+Constantfold,1,53,0.000268448,1,Speculation,8
+DeadStoreRemoval,0,52,0.000570642,1,Speculation,8
+Inline,0,51,8.975e-05,1,Speculation,8
+OptimizeContexts,0,50,0.000120834,1,Speculation,8
+OptimizeVisibility,0,49,0.000135789,1,Speculation,8
+OptimizeAssumptions,1,48,0.000316998,1,Speculation,8
+Cleanup,1,47,0.00038348,1,Speculation,8
+ElideEnv,0,46,0.000183189,1,Speculation,8
+DelayEnv,0,45,8.6569e-05,1,Speculation,8
+DelayInstr,0,44,0.000136469,1,Speculation,8
+Cleanup,0,43,0.000332907,1,Speculation,8
+OptimizeVisibility,0,42,0.000148529,1,Speculation,8
+OptimizeAssumptions,0,41,0.000307,1,Speculation,8
+Cleanup,0,40,0.000336889,1,Speculation,8
+TypeInference,0,39,0.000177524,1,Speculation,8
+Overflow,0,38,0.000144512,1,Speculation,8
+TypefeedbackCleanup,0,37,7.5902e-05,1,Speculation,8
+TypeSpeculation,0,36,0.000206437,1,Speculation,8
+Speculation post,0,0,7.5186e-05,0,Speculation post,8
+HoistInstruction,1,0,0.000135816,0,Speculation post,8
+LoopInvariant,0,0,0.000100869,0,Speculation post,8
+Remove CP,0,0,7.295e-05,0,Remove CP,8
+CleanupCheckpoints,1,0,8.5461e-05,0,Remove CP,8
+HoistInstruction,0,0,8.0118e-05,0,Remove CP,8
+LoopInvariant,0,0,6.3606e-05,0,Remove CP,8
+Intermediate 2,0,59,4.3344e-05,0,Intermediate 2,8
+DotDotDots,0,58,4.8657e-05,0,Intermediate 2,8
+EagerCalls,0,57,6.6579e-05,0,Intermediate 2,8
+MatchCallArgs,0,56,4.755e-05,0,Intermediate 2,8
+InlineForcePromises,0,55,4.7176e-05,0,Intermediate 2,8
+Inline,0,54,4.9386e-05,0,Intermediate 2,8
+OptimizeContexts,0,53,5.7585e-05,0,Intermediate 2,8
+DelayInstr,0,52,7.9632e-05,0,Intermediate 2,8
+ForceDominance,1,51,0.000217032,0,Intermediate 2,8
+ScopeResolution,1,50,0.000715663,0,Intermediate 2,8
+LoadElision,0,49,8.3948e-05,0,Intermediate 2,8
+GVN,0,48,0.000189357,0,Intermediate 2,8
+Constantfold,1,47,0.000173664,0,Intermediate 2,8
+DeadStoreRemoval,0,46,0.000235004,0,Intermediate 2,8
+Inline,0,45,5.4842e-05,0,Intermediate 2,8
+OptimizeContexts,0,44,6.8611e-05,0,Intermediate 2,8
+OptimizeVisibility,0,43,8.2749e-05,0,Intermediate 2,8
+OptimizeAssumptions,0,42,0.000152039,0,Intermediate 2,8
+Cleanup,1,41,0.000230271,0,Intermediate 2,8
+ElideEnv,0,40,0.00010275,0,Intermediate 2,8
+DelayEnv,0,39,4.5948e-05,0,Intermediate 2,8
+DelayInstr,0,38,7.2216e-05,0,Intermediate 2,8
+Cleanup,1,37,0.000180968,0,Intermediate 2,8
+OptimizeVisibility,0,36,7.5544e-05,0,Intermediate 2,8
+OptimizeAssumptions,0,35,0.000111768,0,Intermediate 2,8
+Cleanup,1,34,0.000178379,0,Intermediate 2,8
+TypeInference,0,33,0.000104628,0,Intermediate 2,8
+Overflow,0,32,7.221e-05,0,Intermediate 2,8
+Intermediate 2 post,0,0,3.6868e-05,0,Intermediate 2 post,8
+HoistInstruction,0,0,5.75e-05,0,Intermediate 2 post,8
+LoopInvariant,0,0,4.6325e-05,0,Intermediate 2 post,8
+Cleanup FS,0,0,3.4564e-05,0,Cleanup FS,8
+CleanupFramestate,1,0,4.0676e-05,0,Cleanup FS,8
+CleanupCheckpoints,1,0,4.3517e-05,0,Cleanup FS,8
+Final,0,119,3.378e-05,0,Final,8
+DotDotDots,0,118,3.7786e-05,0,Final,8
+EagerCalls,0,117,4.6617e-05,0,Final,8
+MatchCallArgs,0,116,3.6281e-05,0,Final,8
+InlineForcePromises,0,115,3.5846e-05,0,Final,8
+Inline,0,114,3.7629e-05,0,Final,8
+OptimizeContexts,0,113,4.0027e-05,0,Final,8
+DelayInstr,0,112,6.3994e-05,0,Final,8
+ForceDominance,1,111,0.000149288,0,Final,8
+ScopeResolution,0,110,0.000567441,0,Final,8
+LoadElision,0,109,5.7668e-05,0,Final,8
+GVN,0,108,0.000153932,0,Final,8
+Constantfold,0,107,0.000108682,0,Final,8
+DeadStoreRemoval,0,106,0.000168263,0,Final,8
+Inline,0,105,3.8463e-05,0,Final,8
+OptimizeContexts,0,104,4.1901e-05,0,Final,8
+OptimizeVisibility,0,103,5.6155e-05,0,Final,8
+OptimizeAssumptions,0,102,9.886e-05,0,Final,8
+Cleanup,1,101,0.000174599,0,Final,8
+ElideEnv,0,100,8.2352e-05,0,Final,8
+DelayEnv,0,99,3.6118e-05,0,Final,8
+DelayInstr,1,98,6.4706e-05,0,Final,8
+Cleanup,1,97,0.0001496,0,Final,8
+OptimizeVisibility,0,96,5.855e-05,0,Final,8
+OptimizeAssumptions,0,95,9.4521e-05,0,Final,8
+Cleanup,0,94,0.000151713,0,Final,8
+TypeInference,0,93,9.677e-05,0,Final,8
+Overflow,0,92,6.1484e-05,0,Final,8
+ElideEnvSpec,0,91,9.3662e-05,0,Final,8
+CleanupCheckpoints,0,90,3.9052e-05,0,Final,8
+Final post,0,0,2.9869e-05,0,Final post,8
+HoistInstruction,0,0,4.5551e-05,0,Final post,8
+LoopInvariant,0,0,3.8303e-05,0,Final post,8
+Constantfold,0,0,8.6303e-05,0,Final post,8
+Cleanup,0,0,0.00015335,0,Final post,8
+CleanupCheckpoints,0,0,3.8641e-05,0,Final post,8
+done,0,0,2.9994e-05,0,done,8
+Initial,0,59,0.000165885,0,Initial,9
+TypefeedbackCleanup,0,58,0.000148091,0,Initial,9
+DotDotDots,0,57,0.000158267,0,Initial,9
+EagerCalls,1,56,0.000269387,0,Initial,9
+MatchCallArgs,1,55,0.00100519,0,Initial,9
+InlineForcePromises,0,54,0.000170479,0,Initial,10
+Inline,1,53,0.00045301,0,Initial,10
+OptimizeContexts,0,52,0.000306078,0,Initial,10
+DelayInstr,1,51,0.000367793,0,Initial,10
+ForceDominance,1,50,0.00132889,0,Initial,10
+ScopeResolution,1,49,0.00276873,0,Initial,10
+LoadElision,0,48,0.00026157,0,Initial,10
+GVN,0,47,0.000955146,0,Initial,10
+Constantfold,0,46,0.000763132,0,Initial,10
+DeadStoreRemoval,0,45,0.00150548,0,Initial,10
+Inline,0,44,0.000174145,0,Initial,10
+OptimizeContexts,0,43,0.000250857,0,Initial,10
+OptimizeVisibility,1,42,0.00034957,0,Initial,10
+OptimizeAssumptions,1,41,0.000755563,0,Initial,10
+Cleanup,1,40,0.000604402,0,Initial,10
+ElideEnv,1,39,0.000311189,0,Initial,10
+DelayEnv,1,38,0.000153197,0,Initial,10
+DelayInstr,0,37,0.000233926,0,Initial,10
+Cleanup,0,36,0.000493586,0,Initial,10
+OptimizeVisibility,0,35,0.000276041,0,Initial,10
+OptimizeAssumptions,1,34,0.000570959,0,Initial,10
+Cleanup,0,33,0.000485633,0,Initial,10
+TypeInference,0,32,0.000233156,0,Initial,10
+Overflow,0,31,0.000226535,0,Initial,10
+Initial post,0,0,0.000119433,0,Initial post,10
+HoistInstruction,0,0,0.000218431,0,Initial post,10
+LoopInvariant,0,0,0.000155241,0,Initial post,10
+Speculation,0,99,0.000116894,0,Speculation,10
+TypefeedbackCleanup,0,98,0.000116206,0,Speculation,10
+ElideEnvSpec,1,97,0.000513222,0,Speculation,10
+DotDotDots,0,96,0.000139718,0,Speculation,10
+EagerCalls,0,95,0.000171784,0,Speculation,10
+MatchCallArgs,0,94,0.000132683,0,Speculation,10
+InlineForcePromises,0,93,0.000129836,0,Speculation,10
+Inline,0,92,0.000133519,0,Speculation,10
+OptimizeContexts,0,91,0.000206892,0,Speculation,10
+DelayInstr,0,90,0.000237906,0,Speculation,10
+ForceDominance,1,89,0.000948604,0,Speculation,10
+ScopeResolution,1,88,0.00223256,0,Speculation,10
+LoadElision,0,87,0.000206112,0,Speculation,10
+GVN,0,86,0.000755906,0,Speculation,10
+Constantfold,0,85,0.000647113,0,Speculation,10
+DeadStoreRemoval,0,84,0.00111094,0,Speculation,10
+Inline,0,83,0.000136077,0,Speculation,10
+OptimizeContexts,0,82,0.000205647,0,Speculation,10
+OptimizeVisibility,0,81,0.000241912,0,Speculation,10
+OptimizeAssumptions,1,80,0.000686621,0,Speculation,10
+Cleanup,0,79,0.000508554,0,Speculation,10
+ElideEnv,1,78,0.000293179,0,Speculation,10
+DelayEnv,0,77,0.000127379,0,Speculation,10
+DelayInstr,0,76,0.000213597,0,Speculation,10
+Cleanup,0,75,0.000456983,0,Speculation,10
+OptimizeVisibility,0,74,0.000218729,0,Speculation,10
+OptimizeAssumptions,1,73,0.000543366,0,Speculation,10
+Cleanup,0,72,0.00045219,0,Speculation,10
+TypeInference,0,71,0.0002175,0,Speculation,10
+Overflow,0,70,0.000205972,0,Speculation,10
+TypefeedbackCleanup,0,69,0.00010909,0,Speculation,10
+TypeSpeculation,1,68,0.000546588,0,Speculation,10
+Speculation,0,67,0.000115711,1,Speculation,10
+TypefeedbackCleanup,0,66,0.000110299,1,Speculation,10
+ElideEnvSpec,1,65,0.000332363,1,Speculation,10
+DotDotDots,0,64,0.000124373,1,Speculation,10
+EagerCalls,0,63,0.000160152,1,Speculation,10
+MatchCallArgs,0,62,0.000119557,1,Speculation,10
+InlineForcePromises,0,61,0.000117757,1,Speculation,10
+Inline,0,60,0.000120436,1,Speculation,10
+OptimizeContexts,0,59,0.000182739,1,Speculation,10
+DelayInstr,0,58,0.000209636,1,Speculation,10
+ForceDominance,0,57,0.00066435,1,Speculation,10
+ScopeResolution,1,56,0.00193915,1,Speculation,10
+LoadElision,0,55,0.000186909,1,Speculation,10
+GVN,0,54,0.000642453,1,Speculation,10
+Constantfold,0,53,0.000374869,1,Speculation,10
+DeadStoreRemoval,0,52,0.000937417,1,Speculation,10
+Inline,0,51,0.000125132,1,Speculation,10
+OptimizeContexts,0,50,0.000185447,1,Speculation,10
+OptimizeVisibility,0,49,0.000203047,1,Speculation,10
+OptimizeAssumptions,1,48,0.000528307,1,Speculation,10
+Cleanup,0,47,0.000482222,1,Speculation,10
+ElideEnv,0,46,0.000260762,1,Speculation,10
+DelayEnv,0,45,0.000120543,1,Speculation,10
+DelayInstr,0,44,0.000206112,1,Speculation,10
+Cleanup,0,43,0.000443393,1,Speculation,10
+OptimizeVisibility,0,42,0.000206497,1,Speculation,10
+OptimizeAssumptions,0,41,0.000494357,1,Speculation,10
+Cleanup,0,40,0.000442507,1,Speculation,10
+TypeInference,0,39,0.000216188,1,Speculation,10
+Overflow,0,38,0.000203688,1,Speculation,10
+TypefeedbackCleanup,0,37,0.000107052,1,Speculation,10
+TypeSpeculation,0,36,0.000445295,1,Speculation,10
+Speculation post,0,0,0.000108785,0,Speculation post,10
+HoistInstruction,1,0,0.000191107,0,Speculation post,10
+LoopInvariant,0,0,0.000134396,0,Speculation post,10
+Remove CP,0,0,0.000104216,0,Remove CP,10
+CleanupCheckpoints,1,0,0.000123233,0,Remove CP,10
+HoistInstruction,0,0,0.000137466,0,Remove CP,10
+LoopInvariant,0,0,9.0591e-05,0,Remove CP,10
+Intermediate 2,0,59,6.7368e-05,0,Intermediate 2,10
+DotDotDots,0,58,7.604e-05,0,Intermediate 2,10
+EagerCalls,0,57,0.00010099,0,Intermediate 2,10
+MatchCallArgs,0,56,7.4838e-05,0,Intermediate 2,10
+InlineForcePromises,0,55,7.3845e-05,0,Intermediate 2,10
+Inline,0,54,7.7255e-05,0,Intermediate 2,10
+OptimizeContexts,0,53,0.000115519,0,Intermediate 2,10
+DelayInstr,0,52,0.000132486,0,Intermediate 2,10
+ForceDominance,0,51,0.000369126,0,Intermediate 2,10
+ScopeResolution,0,50,0.000995317,0,Intermediate 2,10
+LoadElision,0,49,0.000119678,0,Intermediate 2,10
+GVN,0,48,0.000395122,0,Intermediate 2,10
+Constantfold,0,47,0.000236687,0,Intermediate 2,10
+DeadStoreRemoval,0,46,0.000497623,0,Intermediate 2,10
+Inline,0,45,8.4071e-05,0,Intermediate 2,10
+OptimizeContexts,0,44,0.000134683,0,Intermediate 2,10
+OptimizeVisibility,0,43,0.00013258,0,Intermediate 2,10
+OptimizeAssumptions,0,42,0.000284969,0,Intermediate 2,10
+Cleanup,1,41,0.000317996,0,Intermediate 2,10
+ElideEnv,0,40,0.000162083,0,Intermediate 2,10
+DelayEnv,0,39,7.1576e-05,0,Intermediate 2,10
+DelayInstr,0,38,0.00012271,0,Intermediate 2,10
+Cleanup,1,37,0.000263798,0,Intermediate 2,10
+OptimizeVisibility,0,36,0.000130663,0,Intermediate 2,10
+OptimizeAssumptions,0,35,0.00021487,0,Intermediate 2,10
+Cleanup,0,34,0.000260557,0,Intermediate 2,10
+TypeInference,0,33,0.0001381,0,Intermediate 2,10
+Overflow,0,32,0.000117746,0,Intermediate 2,10
+Intermediate 2 post,0,0,5.9547e-05,0,Intermediate 2 post,10
+HoistInstruction,1,0,0.000105745,0,Intermediate 2 post,10
+LoopInvariant,0,0,6.8629e-05,0,Intermediate 2 post,10
+Cleanup FS,0,0,5.664e-05,0,Cleanup FS,10
+CleanupFramestate,1,0,6.5812e-05,0,Cleanup FS,10
+CleanupCheckpoints,0,0,6.9386e-05,0,Cleanup FS,10
+Final,0,119,5.5813e-05,0,Final,10
+DotDotDots,0,118,6.248e-05,0,Final,10
+EagerCalls,0,117,7.6144e-05,0,Final,10
+MatchCallArgs,0,116,6.1025e-05,0,Final,10
+InlineForcePromises,0,115,6.0424e-05,0,Final,10
+Inline,0,114,6.2087e-05,0,Final,10
+OptimizeContexts,0,113,8.7385e-05,0,Final,10
+DelayInstr,0,112,0.000111465,0,Final,10
+ForceDominance,0,111,0.000272084,0,Final,10
+ScopeResolution,1,110,0.00101651,0,Final,10
+LoadElision,0,109,8.6392e-05,0,Final,10
+GVN,0,108,0.000307153,0,Final,10
+Constantfold,0,107,0.00018277,0,Final,10
+DeadStoreRemoval,0,106,0.000321413,0,Final,10
+Inline,0,105,5.9494e-05,0,Final,10
+OptimizeContexts,0,104,8.5135e-05,0,Final,10
+OptimizeVisibility,0,103,9.4453e-05,0,Final,10
+OptimizeAssumptions,0,102,0.000195405,0,Final,10
+Cleanup,1,101,0.000244815,0,Final,10
+ElideEnv,0,100,0.000129519,0,Final,10
+DelayEnv,0,99,5.6331e-05,0,Final,10
+DelayInstr,1,98,0.000105484,0,Final,10
+Cleanup,0,97,0.000215669,0,Final,10
+OptimizeVisibility,0,96,9.938e-05,0,Final,10
+OptimizeAssumptions,0,95,0.000183294,0,Final,10
+Cleanup,0,94,0.000223108,0,Final,10
+TypeInference,0,93,0.000132605,0,Final,10
+Overflow,0,92,9.8285e-05,0,Final,10
+ElideEnvSpec,0,91,0.000155698,0,Final,10
+CleanupCheckpoints,0,90,6.2773e-05,0,Final,10
+Final post,0,0,4.8067e-05,0,Final post,10
+HoistInstruction,0,0,8.5083e-05,0,Final post,10
+LoopInvariant,0,0,5.8178e-05,0,Final post,10
+Constantfold,0,0,0.000127236,0,Final post,10
+Cleanup,0,0,0.000222777,0,Final post,10
+CleanupCheckpoints,0,0,6.2212e-05,0,Final post,10
+done,0,0,4.8441e-05,0,done,10
+Initial,0,59,3.4876e-05,0,Initial,11
+TypefeedbackCleanup,0,58,2.9988e-05,0,Initial,11
+DotDotDots,0,57,3.254e-05,0,Initial,11
+EagerCalls,0,56,4.2757e-05,0,Initial,11
+MatchCallArgs,0,55,3.08e-05,0,Initial,11
+InlineForcePromises,0,54,3.0909e-05,0,Initial,11
+Inline,0,53,3.3837e-05,0,Initial,11
+OptimizeContexts,0,52,3.9842e-05,0,Initial,11
+DelayInstr,1,51,6.6725e-05,0,Initial,11
+ForceDominance,0,50,0.000193185,0,Initial,11
+ScopeResolution,1,49,0.000508288,0,Initial,11
+LoadElision,0,48,8.1223e-05,0,Initial,11
+GVN,1,47,0.000194766,0,Initial,11
+Constantfold,1,46,0.000165057,0,Initial,11
+DeadStoreRemoval,0,45,4.6236e-05,0,Initial,11
+Inline,0,44,3.1606e-05,0,Initial,11
+OptimizeContexts,0,43,3.5897e-05,0,Initial,11
+OptimizeVisibility,1,42,7.7338e-05,0,Initial,11
+OptimizeAssumptions,1,41,0.000174732,0,Initial,11
+Cleanup,1,40,0.000111158,0,Initial,11
+ElideEnv,0,39,4.6742e-05,0,Initial,11
+DelayEnv,1,38,2.7378e-05,0,Initial,11
+DelayInstr,0,37,3.694e-05,0,Initial,11
+Cleanup,1,36,7.4932e-05,0,Initial,11
+OptimizeVisibility,0,35,4.9284e-05,0,Initial,11
+OptimizeAssumptions,1,34,8.2101e-05,0,Initial,11
+Cleanup,1,33,7.068e-05,0,Initial,11
+TypeInference,0,32,4.8184e-05,0,Initial,11
+Overflow,0,31,3.1379e-05,0,Initial,11
+Initial post,0,0,1.5974e-05,0,Initial post,11
+HoistInstruction,1,0,4.3507e-05,0,Initial post,11
+LoopInvariant,0,0,2.2175e-05,0,Initial post,11
+Speculation,0,99,1.6066e-05,0,Speculation,11
+TypefeedbackCleanup,0,98,1.6403e-05,0,Speculation,11
+ElideEnvSpec,1,97,8.5425e-05,0,Speculation,11
+DotDotDots,0,96,1.9371e-05,0,Speculation,11
+EagerCalls,0,95,2.6028e-05,0,Speculation,11
+MatchCallArgs,0,94,1.8259e-05,0,Speculation,11
+InlineForcePromises,0,93,1.85e-05,0,Speculation,11
+Inline,0,92,1.9331e-05,0,Speculation,11
+OptimizeContexts,0,91,2.3184e-05,0,Speculation,11
+DelayInstr,0,90,3.3956e-05,0,Speculation,11
+ForceDominance,0,89,9.2083e-05,0,Speculation,11
+ScopeResolution,1,88,0.000289761,0,Speculation,11
+LoadElision,0,87,3.9851e-05,0,Speculation,11
+GVN,0,86,9.1334e-05,0,Speculation,11
+Constantfold,1,85,8.6859e-05,0,Speculation,11
+DeadStoreRemoval,0,84,1.8475e-05,0,Speculation,11
+Inline,0,83,1.1773e-05,0,Speculation,11
+OptimizeContexts,0,82,1.6059e-05,0,Speculation,11
+OptimizeVisibility,0,81,2.309e-05,0,Speculation,11
+OptimizeAssumptions,1,80,4.8277e-05,0,Speculation,11
+Cleanup,1,79,4.5789e-05,0,Speculation,11
+ElideEnv,1,78,2.3541e-05,0,Speculation,11
+DelayEnv,0,77,9.794e-06,0,Speculation,11
+DelayInstr,0,76,1.5894e-05,0,Speculation,11
+Cleanup,1,75,3.6837e-05,0,Speculation,11
+OptimizeVisibility,0,74,1.9745e-05,0,Speculation,11
+OptimizeAssumptions,1,73,3.8981e-05,0,Speculation,11
+Cleanup,1,72,3.449e-05,0,Speculation,11
+TypeInference,0,71,1.8049e-05,0,Speculation,11
+Overflow,0,70,1.3433e-05,0,Speculation,11
+TypefeedbackCleanup,0,69,7.422e-06,0,Speculation,11
+TypeSpeculation,0,68,2.7755e-05,0,Speculation,11
+Speculation post,0,0,7.725e-06,0,Speculation post,11
+HoistInstruction,0,0,1.4389e-05,0,Speculation post,11
+LoopInvariant,0,0,9.686e-06,0,Speculation post,11
+Remove CP,0,0,7.044e-06,0,Remove CP,11
+CleanupCheckpoints,1,0,1.1405e-05,0,Remove CP,11
+HoistInstruction,0,0,1.0254e-05,0,Remove CP,11
+LoopInvariant,0,0,7.43e-06,0,Remove CP,11
+Intermediate 2,0,59,6.119e-06,0,Intermediate 2,11
+DotDotDots,0,58,6.66e-06,0,Intermediate 2,11
+EagerCalls,0,57,1.0488e-05,0,Intermediate 2,11
+MatchCallArgs,0,56,6.913e-06,0,Intermediate 2,11
+InlineForcePromises,0,55,7.062e-06,0,Intermediate 2,11
+Inline,0,54,7.359e-06,0,Intermediate 2,11
+OptimizeContexts,0,53,9.148e-06,0,Intermediate 2,11
+DelayInstr,0,52,1.2391e-05,0,Intermediate 2,11
+ForceDominance,0,51,3.9724e-05,0,Intermediate 2,11
+ScopeResolution,1,50,0.000114425,0,Intermediate 2,11
+LoadElision,0,49,1.6408e-05,0,Intermediate 2,11
+GVN,0,48,3.2301e-05,0,Intermediate 2,11
+Constantfold,0,47,2.157e-05,0,Intermediate 2,11
+DeadStoreRemoval,0,46,1.179e-05,0,Intermediate 2,11
+Inline,0,45,7.348e-06,0,Intermediate 2,11
+OptimizeContexts,0,44,8.712e-06,0,Intermediate 2,11
+OptimizeVisibility,0,43,1.3421e-05,0,Intermediate 2,11
+OptimizeAssumptions,0,42,2.7485e-05,0,Intermediate 2,11
+Cleanup,1,41,3.2964e-05,0,Intermediate 2,11
+ElideEnv,1,40,1.7204e-05,0,Intermediate 2,11
+DelayEnv,0,39,7.336e-06,0,Intermediate 2,11
+DelayInstr,0,38,1.1292e-05,0,Intermediate 2,11
+Cleanup,0,37,2.7905e-05,0,Intermediate 2,11
+OptimizeVisibility,0,36,1.0832e-05,0,Intermediate 2,11
+OptimizeAssumptions,0,35,2.377e-05,0,Intermediate 2,11
+Cleanup,0,34,2.7276e-05,0,Intermediate 2,11
+TypeInference,0,33,1.4373e-05,0,Intermediate 2,11
+Overflow,0,32,1.0217e-05,0,Intermediate 2,11
+Intermediate 2 post,0,0,6.136e-06,0,Intermediate 2 post,11
+HoistInstruction,0,0,1.0968e-05,0,Intermediate 2 post,11
+LoopInvariant,0,0,7.361e-06,0,Intermediate 2 post,11
+Cleanup FS,0,0,5.567e-06,0,Cleanup FS,11
+CleanupFramestate,1,0,7.852e-06,0,Cleanup FS,11
+CleanupCheckpoints,1,0,8.47e-06,0,Cleanup FS,11
+Final,0,119,5.041e-06,0,Final,11
+DotDotDots,0,118,5.459e-06,0,Final,11
+EagerCalls,0,117,7.949e-06,0,Final,11
+MatchCallArgs,0,116,5.415e-06,0,Final,11
+InlineForcePromises,0,115,5.541e-06,0,Final,11
+Inline,0,114,5.775e-06,0,Final,11
+OptimizeContexts,0,113,8.317e-06,0,Final,11
+DelayInstr,0,112,9.657e-06,0,Final,11
+ForceDominance,0,111,3.0636e-05,0,Final,11
+ScopeResolution,0,110,7.4034e-05,0,Final,11
+LoadElision,0,109,1.0575e-05,0,Final,11
+GVN,0,108,2.4852e-05,0,Final,11
+Constantfold,0,107,1.6257e-05,0,Final,11
+DeadStoreRemoval,0,106,9.794e-06,0,Final,11
+Inline,0,105,5.823e-06,0,Final,11
+OptimizeContexts,0,104,7.892e-06,0,Final,11
+OptimizeVisibility,0,103,9.724e-06,0,Final,11
+OptimizeAssumptions,0,102,2.1665e-05,0,Final,11
+Cleanup,1,101,3.1607e-05,0,Final,11
+ElideEnv,0,100,1.1489e-05,0,Final,11
+DelayEnv,0,99,5.588e-06,0,Final,11
+DelayInstr,0,98,8.26e-06,0,Final,11
+Cleanup,0,97,2.0056e-05,0,Final,11
+OptimizeVisibility,0,96,8.068e-06,0,Final,11
+OptimizeAssumptions,0,95,1.7773e-05,0,Final,11
+Cleanup,0,94,1.9847e-05,0,Final,11
+TypeInference,0,93,1.1632e-05,0,Final,11
+Overflow,0,92,7.601e-06,0,Final,11
+ElideEnvSpec,0,91,1.8396e-05,0,Final,11
+CleanupCheckpoints,0,90,6.33e-06,0,Final,11
+Final post,0,0,4.187e-06,0,Final post,11
+HoistInstruction,0,0,1.04e-05,0,Final post,11
+LoopInvariant,0,0,5.492e-06,0,Final post,11
+Constantfold,1,0,1.3081e-05,0,Final post,11
+Cleanup,0,0,2.0446e-05,0,Final post,11
+CleanupCheckpoints,0,0,5.631e-06,0,Final post,11
+done,0,0,4.068e-06,0,done,11
+Initial,0,59,1.3262e-05,0,Initial,12
+TypefeedbackCleanup,0,58,8.899e-06,0,Initial,12
+DotDotDots,0,57,9.909e-06,0,Initial,12
+EagerCalls,0,56,1.3714e-05,0,Initial,12
+MatchCallArgs,0,55,8.817e-06,0,Initial,12
+InlineForcePromises,0,54,9.035e-06,0,Initial,12
+Inline,0,53,1.1576e-05,0,Initial,12
+OptimizeContexts,0,52,1.9183e-05,0,Initial,12
+DelayInstr,0,51,1.7657e-05,0,Initial,12
+ForceDominance,1,50,7.5828e-05,0,Initial,12
+ScopeResolution,0,49,0.000112738,0,Initial,12
+LoadElision,0,48,2.0418e-05,0,Initial,12
+GVN,0,47,3.9559e-05,0,Initial,12
+Constantfold,0,46,3.2712e-05,0,Initial,12
+DeadStoreRemoval,0,45,9.6461e-05,0,Initial,12
+Inline,0,44,9.411e-06,0,Initial,12
+OptimizeContexts,0,43,1.2807e-05,0,Initial,12
+OptimizeVisibility,0,42,2.6954e-05,0,Initial,12
+OptimizeAssumptions,0,41,3.0831e-05,0,Initial,12
+Cleanup,1,40,4.6353e-05,0,Initial,12
+ElideEnv,0,39,2.2571e-05,0,Initial,12
+DelayEnv,1,38,1.4075e-05,0,Initial,12
+DelayInstr,0,37,1.3517e-05,0,Initial,12
+Cleanup,0,36,2.9445e-05,0,Initial,12
+OptimizeVisibility,0,35,2.1879e-05,0,Initial,12
+OptimizeAssumptions,0,34,2.2242e-05,0,Initial,12
+Cleanup,0,33,2.7825e-05,0,Initial,12
+TypeInference,0,32,1.8616e-05,0,Initial,12
+Overflow,0,31,1.2837e-05,0,Initial,12
+Initial post,0,0,6.678e-06,0,Initial post,12
+HoistInstruction,0,0,1.3487e-05,0,Initial post,12
+LoopInvariant,0,0,9.447e-06,0,Initial post,12
+Speculation,0,99,6.591e-06,0,Speculation,12
+TypefeedbackCleanup,0,98,6.88e-06,0,Speculation,12
+ElideEnvSpec,1,97,5.8019e-05,0,Speculation,12
+DotDotDots,0,96,9.311e-06,0,Speculation,12
+EagerCalls,0,95,1.1349e-05,0,Speculation,12
+MatchCallArgs,0,94,8.469e-06,0,Speculation,12
+InlineForcePromises,0,93,8.771e-06,0,Speculation,12
+Inline,0,92,8.882e-06,0,Speculation,12
+OptimizeContexts,0,91,1.1686e-05,0,Speculation,12
+DelayInstr,0,90,1.654e-05,0,Speculation,12
+ForceDominance,1,89,5.5971e-05,0,Speculation,12
+ScopeResolution,1,88,0.000130096,0,Speculation,12
+LoadElision,0,87,8.972e-06,0,Speculation,12
+GVN,0,86,3.4236e-05,0,Speculation,12
+Constantfold,0,85,2.7315e-05,0,Speculation,12
+DeadStoreRemoval,0,84,1.3145e-05,0,Speculation,12
+Inline,0,83,8.131e-06,0,Speculation,12
+OptimizeContexts,0,82,1.1357e-05,0,Speculation,12
+OptimizeVisibility,0,81,1.5612e-05,0,Speculation,12
+OptimizeAssumptions,1,80,3.5558e-05,0,Speculation,12
+Cleanup,1,79,4.0817e-05,0,Speculation,12
+ElideEnv,1,78,1.7503e-05,0,Speculation,12
+DelayEnv,0,77,7.242e-06,0,Speculation,12
+DelayInstr,0,76,1.1648e-05,0,Speculation,12
+Cleanup,0,75,2.6201e-05,0,Speculation,12
+OptimizeVisibility,0,74,1.2268e-05,0,Speculation,12
+OptimizeAssumptions,0,73,2.4752e-05,0,Speculation,12
+Cleanup,0,72,2.5573e-05,0,Speculation,12
+TypeInference,0,71,1.4429e-05,0,Speculation,12
+Overflow,0,70,1.0278e-05,0,Speculation,12
+TypefeedbackCleanup,0,69,6.021e-06,0,Speculation,12
+TypeSpeculation,1,68,2.9702e-05,0,Speculation,12
+Speculation,0,67,5.917e-06,1,Speculation,12
+TypefeedbackCleanup,0,66,6.146e-06,1,Speculation,12
+ElideEnvSpec,0,65,2.3105e-05,1,Speculation,12
+DotDotDots,0,64,7.04e-06,1,Speculation,12
+EagerCalls,0,63,9.442e-06,1,Speculation,12
+MatchCallArgs,0,62,6.616e-06,1,Speculation,12
+InlineForcePromises,0,61,7.04e-06,1,Speculation,12
+Inline,0,60,7.156e-06,1,Speculation,12
+OptimizeContexts,0,59,9.052e-06,1,Speculation,12
+DelayInstr,0,58,1.2545e-05,1,Speculation,12
+ForceDominance,0,57,3.426e-05,1,Speculation,12
+ScopeResolution,0,56,9.4608e-05,1,Speculation,12
+LoadElision,0,55,7.82e-06,1,Speculation,12
+GVN,0,54,2.9968e-05,1,Speculation,12
+Constantfold,1,53,2.0832e-05,1,Speculation,12
+DeadStoreRemoval,0,52,1.1245e-05,1,Speculation,12
+Inline,0,51,7.025e-06,1,Speculation,12
+OptimizeContexts,0,50,1.0259e-05,1,Speculation,12
+OptimizeVisibility,0,49,1.3619e-05,1,Speculation,12
+OptimizeAssumptions,0,48,2.8738e-05,1,Speculation,12
+Cleanup,1,47,3.2341e-05,1,Speculation,12
+ElideEnv,0,46,1.5893e-05,1,Speculation,12
+DelayEnv,0,45,7.563e-06,1,Speculation,12
+DelayInstr,0,44,1.1023e-05,1,Speculation,12
+Cleanup,0,43,2.5019e-05,1,Speculation,12
+OptimizeVisibility,0,42,1.1856e-05,1,Speculation,12
+OptimizeAssumptions,0,41,2.5428e-05,1,Speculation,12
+Cleanup,0,40,2.5272e-05,1,Speculation,12
+TypeInference,0,39,1.427e-05,1,Speculation,12
+Overflow,0,38,1.0479e-05,1,Speculation,12
+TypefeedbackCleanup,0,37,6.058e-06,1,Speculation,12
+TypeSpeculation,0,36,1.7597e-05,1,Speculation,12
+Speculation post,0,0,6.439e-06,0,Speculation post,12
+HoistInstruction,1,0,1.5038e-05,0,Speculation post,12
+LoopInvariant,0,0,7.908e-06,0,Speculation post,12
+Remove CP,0,0,5.701e-06,0,Remove CP,12
+CleanupCheckpoints,1,0,1.025e-05,0,Remove CP,12
+HoistInstruction,0,0,7.18e-06,0,Remove CP,12
+LoopInvariant,0,0,5.105e-06,0,Remove CP,12
+Intermediate 2,0,59,3.981e-06,0,Intermediate 2,12
+DotDotDots,0,58,4.899e-06,0,Intermediate 2,12
+EagerCalls,0,57,6.756e-06,0,Intermediate 2,12
+MatchCallArgs,0,56,4.464e-06,0,Intermediate 2,12
+InlineForcePromises,0,55,4.672e-06,0,Intermediate 2,12
+Inline,0,54,4.851e-06,0,Intermediate 2,12
+OptimizeContexts,0,53,7.025e-06,0,Intermediate 2,12
+DelayInstr,0,52,7.967e-06,0,Intermediate 2,12
+ForceDominance,0,51,2.5117e-05,0,Intermediate 2,12
+ScopeResolution,0,50,5.9412e-05,0,Intermediate 2,12
+LoadElision,0,49,5.354e-06,0,Intermediate 2,12
+GVN,0,48,1.7074e-05,0,Intermediate 2,12
+Constantfold,0,47,1.3621e-05,0,Intermediate 2,12
+DeadStoreRemoval,0,46,7.944e-06,0,Intermediate 2,12
+Inline,0,45,4.947e-06,0,Intermediate 2,12
+OptimizeContexts,0,44,6.886e-06,0,Intermediate 2,12
+OptimizeVisibility,0,43,9.114e-06,0,Intermediate 2,12
+OptimizeAssumptions,0,42,2.1475e-05,0,Intermediate 2,12
+Cleanup,1,41,2.3406e-05,0,Intermediate 2,12
+ElideEnv,0,40,1.0722e-05,0,Intermediate 2,12
+DelayEnv,0,39,5.041e-06,0,Intermediate 2,12
+DelayInstr,0,38,7.481e-06,0,Intermediate 2,12
+Cleanup,1,37,1.6852e-05,0,Intermediate 2,12
+OptimizeVisibility,0,36,7.768e-06,0,Intermediate 2,12
+OptimizeAssumptions,0,35,1.6691e-05,0,Intermediate 2,12
+Cleanup,0,34,1.6382e-05,0,Intermediate 2,12
+TypeInference,0,33,9.708e-06,0,Intermediate 2,12
+Overflow,0,32,6.502e-06,0,Intermediate 2,12
+Intermediate 2 post,0,0,3.853e-06,0,Intermediate 2 post,12
+HoistInstruction,0,0,6.558e-06,0,Intermediate 2 post,12
+LoopInvariant,0,0,4.738e-06,0,Intermediate 2 post,12
+Cleanup FS,0,0,3.493e-06,0,Cleanup FS,12
+CleanupFramestate,1,0,4.913e-06,0,Cleanup FS,12
+CleanupCheckpoints,0,0,5.178e-06,0,Cleanup FS,12
+Final,0,119,3.438e-06,0,Final,12
+DotDotDots,0,118,4.216e-06,0,Final,12
+EagerCalls,0,117,5.997e-06,0,Final,12
+MatchCallArgs,0,116,3.762e-06,0,Final,12
+InlineForcePromises,0,115,3.999e-06,0,Final,12
+Inline,0,114,4.172e-06,0,Final,12
+OptimizeContexts,0,113,5.048e-06,0,Final,12
+DelayInstr,0,112,6.913e-06,0,Final,12
+ForceDominance,0,111,2.2802e-05,0,Final,12
+ScopeResolution,0,110,5.5523e-05,0,Final,12
+LoadElision,0,109,4.584e-06,0,Final,12
+GVN,0,108,1.508e-05,0,Final,12
+Constantfold,0,107,1.0677e-05,0,Final,12
+DeadStoreRemoval,0,106,6.807e-06,0,Final,12
+Inline,0,105,4.179e-06,0,Final,12
+OptimizeContexts,0,104,4.516e-06,0,Final,12
+OptimizeVisibility,0,103,6.904e-06,0,Final,12
+OptimizeAssumptions,0,102,1.5663e-05,0,Final,12
+Cleanup,0,101,1.7627e-05,0,Final,12
+ElideEnv,0,100,9.313e-06,0,Final,12
+DelayEnv,0,99,4.541e-06,0,Final,12
+DelayInstr,0,98,6.362e-06,0,Final,12
+Cleanup,0,97,1.4234e-05,0,Final,12
+OptimizeVisibility,0,96,6.386e-06,0,Final,12
+OptimizeAssumptions,0,95,1.363e-05,0,Final,12
+Cleanup,0,94,1.4779e-05,0,Final,12
+TypeInference,0,93,8.756e-06,0,Final,12
+Overflow,0,92,5.91e-06,0,Final,12
+ElideEnvSpec,0,91,1.55e-05,0,Final,12
+CleanupCheckpoints,0,90,4.991e-06,0,Final,12
+Final post,0,0,3.237e-06,0,Final post,12
+HoistInstruction,0,0,5.973e-06,0,Final post,12
+LoopInvariant,0,0,4.365e-06,0,Final post,12
+Constantfold,0,0,9.283e-06,0,Final post,12
+Cleanup,0,0,1.5226e-05,0,Final post,12
+CleanupCheckpoints,0,0,4.429e-06,0,Final post,12
+done,0,0,3.241e-06,0,done,12
+Initial,0,59,2.6335e-05,0,Initial,13
+TypefeedbackCleanup,0,58,2.3692e-05,0,Initial,13
+DotDotDots,0,57,2.0322e-05,0,Initial,13
+EagerCalls,0,56,3.2807e-05,0,Initial,13
+MatchCallArgs,0,55,2.9246e-05,0,Initial,13
+InlineForcePromises,0,54,1.9169e-05,0,Initial,13
+Inline,0,53,2.6239e-05,0,Initial,13
+OptimizeContexts,0,52,4.2891e-05,0,Initial,13
+DelayInstr,1,51,8.4235e-05,0,Initial,13
+ForceDominance,0,50,0.000485234,0,Initial,13
+ScopeResolution,1,49,0.000588047,0,Initial,13
+LoadElision,0,48,4.6897e-05,0,Initial,13
+GVN,0,47,0.000435817,0,Initial,13
+Constantfold,0,46,0.000136569,0,Initial,13
+DeadStoreRemoval,0,45,0.000513392,0,Initial,13
+Inline,0,44,2.1345e-05,0,Initial,13
+OptimizeContexts,0,43,3.3777e-05,0,Initial,13
+OptimizeVisibility,1,42,6.9439e-05,0,Initial,13
+OptimizeAssumptions,1,41,7.1885e-05,0,Initial,13
+Cleanup,1,40,9.593e-05,0,Initial,13
+ElideEnv,0,39,4.2376e-05,0,Initial,13
+DelayEnv,0,38,1.8639e-05,0,Initial,13
+DelayInstr,0,37,2.4178e-05,0,Initial,13
+Cleanup,0,36,5.9817e-05,0,Initial,13
+OptimizeVisibility,0,35,8.9901e-05,0,Initial,13
+OptimizeAssumptions,0,34,7.4471e-05,0,Initial,13
+Cleanup,0,33,5.7448e-05,0,Initial,13
+TypeInference,0,32,4.6723e-05,0,Initial,13
+Overflow,0,31,2.5424e-05,0,Initial,13
+Initial post,0,0,1.3606e-05,0,Initial post,13
+HoistInstruction,0,0,2.3818e-05,0,Initial post,13
+LoopInvariant,0,0,1.8999e-05,0,Initial post,13
+Speculation,0,99,1.3726e-05,0,Speculation,13
+TypefeedbackCleanup,0,98,1.418e-05,0,Speculation,13
+ElideEnvSpec,0,97,6.4262e-05,0,Speculation,13
+DotDotDots,0,96,1.5226e-05,0,Speculation,13
+EagerCalls,0,95,2.0401e-05,0,Speculation,13
+MatchCallArgs,0,94,1.5045e-05,0,Speculation,13
+InlineForcePromises,0,93,1.5128e-05,0,Speculation,13
+Inline,0,92,1.5892e-05,0,Speculation,13
+OptimizeContexts,0,91,1.8161e-05,0,Speculation,13
+DelayInstr,0,90,2.244e-05,0,Speculation,13
+ForceDominance,0,89,0.000252864,0,Speculation,13
+ScopeResolution,0,88,0.000448294,0,Speculation,13
+LoadElision,0,87,2.8827e-05,0,Speculation,13
+GVN,0,86,0.000264534,0,Speculation,13
+Constantfold,0,85,0.000100654,0,Speculation,13
+DeadStoreRemoval,0,84,0.000257802,0,Speculation,13
+Inline,0,83,1.7287e-05,0,Speculation,13
+OptimizeContexts,0,82,2.7198e-05,0,Speculation,13
+OptimizeVisibility,0,81,5.1593e-05,0,Speculation,13
+OptimizeAssumptions,0,80,4.4872e-05,0,Speculation,13
+Cleanup,0,79,6.6417e-05,0,Speculation,13
+ElideEnv,0,78,3.9266e-05,0,Speculation,13
+DelayEnv,0,77,1.733e-05,0,Speculation,13
+DelayInstr,0,76,2.2625e-05,0,Speculation,13
+Cleanup,0,75,5.5043e-05,0,Speculation,13
+OptimizeVisibility,0,74,4.3775e-05,0,Speculation,13
+OptimizeAssumptions,0,73,4.0215e-05,0,Speculation,13
+Cleanup,0,72,5.5477e-05,0,Speculation,13
+TypeInference,0,71,2.9433e-05,0,Speculation,13
+Overflow,0,70,2.4372e-05,0,Speculation,13
+TypefeedbackCleanup,0,69,1.4323e-05,0,Speculation,13
+TypeSpeculation,1,68,6.2361e-05,0,Speculation,13
+Speculation,0,67,2.0251e-05,1,Speculation,13
+TypefeedbackCleanup,0,66,3.19e-05,1,Speculation,13
+ElideEnvSpec,0,65,7.5601e-05,1,Speculation,13
+DotDotDots,0,64,1.615e-05,1,Speculation,13
+EagerCalls,0,63,2.1234e-05,1,Speculation,13
+MatchCallArgs,0,62,1.5874e-05,1,Speculation,13
+InlineForcePromises,0,61,1.6175e-05,1,Speculation,13
+Inline,0,60,1.6859e-05,1,Speculation,13
+OptimizeContexts,0,59,1.8556e-05,1,Speculation,13
+DelayInstr,0,58,2.5178e-05,1,Speculation,13
+ForceDominance,0,57,9.8681e-05,1,Speculation,13
+ScopeResolution,0,56,0.000399173,1,Speculation,13
+LoadElision,0,55,2.8577e-05,1,Speculation,13
+GVN,0,54,0.000111506,1,Speculation,13
+Constantfold,0,53,7.5327e-05,1,Speculation,13
+DeadStoreRemoval,0,52,0.000188161,1,Speculation,13
+Inline,0,51,1.7458e-05,1,Speculation,13
+OptimizeContexts,0,50,2.198e-05,1,Speculation,13
+OptimizeVisibility,0,49,5.3048e-05,1,Speculation,13
+OptimizeAssumptions,1,48,6.6997e-05,1,Speculation,13
+Cleanup,0,47,6.9876e-05,1,Speculation,13
+ElideEnv,0,46,3.8902e-05,1,Speculation,13
+DelayEnv,0,45,1.6366e-05,1,Speculation,13
+DelayInstr,0,44,2.3222e-05,1,Speculation,13
+Cleanup,0,43,5.663e-05,1,Speculation,13
+OptimizeVisibility,0,42,4.1117e-05,1,Speculation,13
+OptimizeAssumptions,0,41,5.5733e-05,1,Speculation,13
+Cleanup,0,40,5.7814e-05,1,Speculation,13
+TypeInference,0,39,2.9711e-05,1,Speculation,13
+Overflow,0,38,2.4645e-05,1,Speculation,13
+TypefeedbackCleanup,0,37,1.3877e-05,1,Speculation,13
+TypeSpeculation,0,36,3.4043e-05,1,Speculation,13
+Speculation post,0,0,1.3813e-05,0,Speculation post,13
+HoistInstruction,1,0,2.9827e-05,0,Speculation post,13
+LoopInvariant,0,0,1.7682e-05,0,Speculation post,13
+Remove CP,0,0,1.35e-05,0,Remove CP,13
+CleanupCheckpoints,1,0,2.5108e-05,0,Remove CP,13
+HoistInstruction,0,0,1.4468e-05,0,Remove CP,13
+LoopInvariant,0,0,1.1147e-05,0,Remove CP,13
+Intermediate 2,0,59,8.76e-06,0,Intermediate 2,13
+DotDotDots,0,58,9.427e-06,0,Intermediate 2,13
+EagerCalls,0,57,1.399e-05,0,Intermediate 2,13
+MatchCallArgs,0,56,9.208e-06,0,Intermediate 2,13
+InlineForcePromises,0,55,9.21e-06,0,Intermediate 2,13
+Inline,0,54,9.766e-06,0,Intermediate 2,13
+OptimizeContexts,0,53,1.1567e-05,0,Intermediate 2,13
+DelayInstr,0,52,1.4636e-05,0,Intermediate 2,13
+ForceDominance,0,51,7.8092e-05,0,Intermediate 2,13
+ScopeResolution,1,50,0.000189908,0,Intermediate 2,13
+LoadElision,0,49,1.7369e-05,0,Intermediate 2,13
+GVN,0,48,3.7948e-05,0,Intermediate 2,13
+Constantfold,0,47,4.6243e-05,0,Intermediate 2,13
+DeadStoreRemoval,0,46,0.000106305,0,Intermediate 2,13
+Inline,0,45,1.121e-05,0,Intermediate 2,13
+OptimizeContexts,0,44,1.4682e-05,0,Intermediate 2,13
+OptimizeVisibility,0,43,2.2042e-05,0,Intermediate 2,13
+OptimizeAssumptions,0,42,3.6105e-05,0,Intermediate 2,13
+Cleanup,1,41,5.1169e-05,0,Intermediate 2,13
+ElideEnv,0,40,2.3238e-05,0,Intermediate 2,13
+DelayEnv,1,39,1.0348e-05,0,Intermediate 2,13
+DelayInstr,0,38,1.3402e-05,0,Intermediate 2,13
+Cleanup,0,37,3.5227e-05,0,Intermediate 2,13
+OptimizeVisibility,0,36,1.5357e-05,0,Intermediate 2,13
+OptimizeAssumptions,0,35,2.4186e-05,0,Intermediate 2,13
+Cleanup,0,34,3.21e-05,0,Intermediate 2,13
+TypeInference,0,33,2.9462e-05,0,Intermediate 2,13
+Overflow,0,32,1.2916e-05,0,Intermediate 2,13
+Intermediate 2 post,0,0,7.516e-06,0,Intermediate 2 post,13
+HoistInstruction,0,0,1.121e-05,0,Intermediate 2 post,13
+LoopInvariant,0,0,8.156e-06,0,Intermediate 2 post,13
+Cleanup FS,0,0,6.569e-06,0,Cleanup FS,13
+CleanupFramestate,0,0,8.881e-06,0,Cleanup FS,13
+CleanupCheckpoints,0,0,1.0025e-05,0,Cleanup FS,13
+Final,0,119,6.586e-06,0,Final,13
+DotDotDots,0,118,7.336e-06,0,Final,13
+EagerCalls,0,117,9.735e-06,0,Final,13
+MatchCallArgs,0,116,7.07e-06,0,Final,13
+InlineForcePromises,0,115,7.314e-06,0,Final,13
+Inline,0,114,7.833e-06,0,Final,13
+OptimizeContexts,0,113,9.592e-06,0,Final,13
+DelayInstr,0,112,1.1639e-05,0,Final,13
+ForceDominance,0,111,3.7172e-05,0,Final,13
+ScopeResolution,0,110,0.000158114,0,Final,13
+LoadElision,0,109,1.2011e-05,0,Final,13
+GVN,0,108,3.2656e-05,0,Final,13
+Constantfold,0,107,2.5051e-05,0,Final,13
+DeadStoreRemoval,0,106,5.9255e-05,0,Final,13
+Inline,0,105,8.443e-06,0,Final,13
+OptimizeContexts,0,104,9.068e-06,0,Final,13
+OptimizeVisibility,0,103,1.5785e-05,0,Final,13
+OptimizeAssumptions,0,102,2.5653e-05,0,Final,13
+Cleanup,0,101,3.6086e-05,0,Final,13
+ElideEnv,0,100,2.0357e-05,0,Final,13
+DelayEnv,0,99,8.266e-06,0,Final,13
+DelayInstr,0,98,1.1886e-05,0,Final,13
+Cleanup,0,97,2.999e-05,0,Final,13
+OptimizeVisibility,0,96,1.3753e-05,0,Final,13
+OptimizeAssumptions,0,95,2.121e-05,0,Final,13
+Cleanup,0,94,2.944e-05,0,Final,13
+TypeInference,0,93,1.7356e-05,0,Final,13
+Overflow,0,92,1.219e-05,0,Final,13
+ElideEnvSpec,0,91,3.7569e-05,0,Final,13
+CleanupCheckpoints,0,90,9.866e-06,0,Final,13
+Final post,0,0,6.431e-06,0,Final post,13
+HoistInstruction,0,0,1.0459e-05,0,Final post,13
+LoopInvariant,0,0,8.516e-06,0,Final post,13
+Constantfold,0,0,2.2715e-05,0,Final post,13
+Cleanup,0,0,3.0762e-05,0,Final post,13
+CleanupCheckpoints,0,0,9.064e-06,0,Final post,13
+done,0,0,6.407e-06,0,done,13
+Initial,0,59,9.0795e-05,0,Initial,14
+TypefeedbackCleanup,0,58,8.0998e-05,0,Initial,14
+DotDotDots,0,57,8.7192e-05,0,Initial,14
+EagerCalls,0,56,0.000115764,0,Initial,14
+MatchCallArgs,0,55,8.7531e-05,0,Initial,14
+InlineForcePromises,0,54,8.4801e-05,0,Initial,14
+Inline,0,53,0.000107572,0,Initial,14
+OptimizeContexts,0,52,0.000102141,0,Initial,14
+DelayInstr,0,51,0.000161562,0,Initial,14
+ForceDominance,0,50,0.000711906,0,Initial,14
+ScopeResolution,1,49,0.00170696,0,Initial,14
+LoadElision,0,48,0.000154399,0,Initial,14
+GVN,1,47,0.000518837,0,Initial,14
+Constantfold,0,46,0.000461418,0,Initial,14
+DeadStoreRemoval,0,45,0.00112209,0,Initial,14
+Inline,0,44,8.9192e-05,0,Initial,14
+OptimizeContexts,0,43,0.000133393,0,Initial,14
+OptimizeVisibility,1,42,0.000263093,0,Initial,14
+OptimizeAssumptions,1,41,0.000670893,0,Initial,14
+Cleanup,1,40,0.000353059,0,Initial,14
+ElideEnv,0,39,0.000162918,0,Initial,14
+DelayEnv,1,38,8.149e-05,0,Initial,14
+DelayInstr,0,37,0.000121146,0,Initial,14
+Cleanup,0,36,0.000259516,0,Initial,14
+OptimizeVisibility,0,35,0.000122866,0,Initial,14
+OptimizeAssumptions,1,34,0.00038122,0,Initial,14
+Cleanup,0,33,0.000257629,0,Initial,14
+TypeInference,0,32,0.000141571,0,Initial,14
+Overflow,0,31,0.000119642,0,Initial,14
+Initial post,0,0,5.6961e-05,0,Initial post,14
+HoistInstruction,1,0,0.000113436,0,Initial post,14
+LoopInvariant,0,0,8.8807e-05,0,Initial post,14
+Speculation,0,99,5.6224e-05,0,Speculation,14
+TypefeedbackCleanup,0,98,5.6395e-05,0,Speculation,14
+ElideEnvSpec,1,97,0.00026773,0,Speculation,14
+DotDotDots,0,96,6.7184e-05,0,Speculation,14
+EagerCalls,0,95,9.1674e-05,0,Speculation,14
+MatchCallArgs,0,94,6.463e-05,0,Speculation,14
+InlineForcePromises,0,93,6.3343e-05,0,Speculation,14
+Inline,0,92,6.4163e-05,0,Speculation,14
+OptimizeContexts,0,91,7.156e-05,0,Speculation,14
+DelayInstr,0,90,0.000115398,0,Speculation,14
+ForceDominance,0,89,0.000384127,0,Speculation,14
+ScopeResolution,1,88,0.000916606,0,Speculation,14
+LoadElision,0,87,9.5802e-05,0,Speculation,14
+GVN,0,86,0.000339111,0,Speculation,14
+Constantfold,0,85,0.000227258,0,Speculation,14
+DeadStoreRemoval,0,84,0.000657708,0,Speculation,14
+Inline,0,83,6.7961e-05,0,Speculation,14
+OptimizeContexts,0,82,0.000100504,0,Speculation,14
+OptimizeVisibility,0,81,0.000142982,0,Speculation,14
+OptimizeAssumptions,1,80,0.000377223,0,Speculation,14
+Cleanup,0,79,0.000287632,0,Speculation,14
+ElideEnv,1,78,0.000146421,0,Speculation,14
+DelayEnv,0,77,6.4638e-05,0,Speculation,14
+DelayInstr,0,76,0.000112643,0,Speculation,14
+Cleanup,0,75,0.000274283,0,Speculation,14
+OptimizeVisibility,0,74,0.000114536,0,Speculation,14
+OptimizeAssumptions,1,73,0.000364478,0,Speculation,14
+Cleanup,0,72,0.00026381,0,Speculation,14
+TypeInference,0,71,0.000131227,0,Speculation,14
+Overflow,0,70,0.000111209,0,Speculation,14
+TypefeedbackCleanup,0,69,5.5421e-05,0,Speculation,14
+TypeSpeculation,1,68,0.000321226,0,Speculation,14
+Speculation,0,67,5.7291e-05,1,Speculation,14
+TypefeedbackCleanup,0,66,5.5698e-05,1,Speculation,14
+ElideEnvSpec,1,65,0.00018322,1,Speculation,14
+DotDotDots,0,64,6.2037e-05,1,Speculation,14
+EagerCalls,0,63,8.1163e-05,1,Speculation,14
+MatchCallArgs,0,62,5.967e-05,1,Speculation,14
+InlineForcePromises,0,61,5.8724e-05,1,Speculation,14
+Inline,0,60,5.9943e-05,1,Speculation,14
+OptimizeContexts,0,59,7.171e-05,1,Speculation,14
+DelayInstr,0,58,0.000107536,1,Speculation,14
+ForceDominance,0,57,0.000336875,1,Speculation,14
+ScopeResolution,0,56,0.000847158,1,Speculation,14
+LoadElision,0,55,9.0521e-05,1,Speculation,14
+GVN,0,54,0.000320218,1,Speculation,14
+Constantfold,0,53,0.000217022,1,Speculation,14
+DeadStoreRemoval,0,52,0.000641011,1,Speculation,14
+Inline,0,51,6.6146e-05,1,Speculation,14
+OptimizeContexts,0,50,9.6432e-05,1,Speculation,14
+OptimizeVisibility,0,49,0.000118062,1,Speculation,14
+OptimizeAssumptions,1,48,0.000350976,1,Speculation,14
+Cleanup,0,47,0.000293182,1,Speculation,14
+ElideEnv,0,46,0.000137479,1,Speculation,14
+DelayEnv,0,45,6.1633e-05,1,Speculation,14
+DelayInstr,0,44,0.000104074,1,Speculation,14
+Cleanup,0,43,0.00023483,1,Speculation,14
+OptimizeVisibility,0,42,0.000109583,1,Speculation,14
+OptimizeAssumptions,0,41,0.000312211,1,Speculation,14
+Cleanup,0,40,0.000244259,1,Speculation,14
+TypeInference,0,39,0.000119796,1,Speculation,14
+Overflow,0,38,0.000109536,1,Speculation,14
+TypefeedbackCleanup,0,37,5.3889e-05,1,Speculation,14
+TypeSpeculation,0,36,0.000178757,1,Speculation,14
+Speculation post,0,0,5.4601e-05,0,Speculation post,14
+HoistInstruction,1,0,9.5215e-05,0,Speculation post,14
+LoopInvariant,0,0,8.086e-05,0,Speculation post,14
+Remove CP,0,0,5.1882e-05,0,Remove CP,14
+CleanupCheckpoints,1,0,6.5925e-05,0,Remove CP,14
+HoistInstruction,0,0,7.1176e-05,0,Remove CP,14
+LoopInvariant,0,0,5.865e-05,0,Remove CP,14
+Intermediate 2,0,59,3.6104e-05,0,Intermediate 2,14
+DotDotDots,0,58,4.072e-05,0,Intermediate 2,14
+EagerCalls,0,57,5.5618e-05,0,Intermediate 2,14
+MatchCallArgs,0,56,4.0435e-05,0,Intermediate 2,14
+InlineForcePromises,0,55,3.9016e-05,0,Intermediate 2,14
+Inline,0,54,4.1075e-05,0,Intermediate 2,14
+OptimizeContexts,0,53,4.648e-05,0,Intermediate 2,14
+DelayInstr,0,52,7.2965e-05,0,Intermediate 2,14
+ForceDominance,0,51,0.000200587,0,Intermediate 2,14
+ScopeResolution,0,50,0.00052943,0,Intermediate 2,14
+LoadElision,0,49,6.2758e-05,0,Intermediate 2,14
+GVN,0,48,0.000224654,0,Intermediate 2,14
+Constantfold,0,47,0.000143291,0,Intermediate 2,14
+DeadStoreRemoval,0,46,0.000370461,0,Intermediate 2,14
+Inline,0,45,4.5187e-05,0,Intermediate 2,14
+OptimizeContexts,0,44,6.8733e-05,0,Intermediate 2,14
+OptimizeVisibility,0,43,6.9317e-05,0,Intermediate 2,14
+OptimizeAssumptions,0,42,0.000171211,0,Intermediate 2,14
+Cleanup,1,41,0.000196318,0,Intermediate 2,14
+ElideEnv,0,40,9.2582e-05,0,Intermediate 2,14
+DelayEnv,0,39,4.0081e-05,0,Intermediate 2,14
+DelayInstr,0,38,6.9736e-05,0,Intermediate 2,14
+Cleanup,0,37,0.000160023,0,Intermediate 2,14
+OptimizeVisibility,0,36,6.7959e-05,0,Intermediate 2,14
+OptimizeAssumptions,0,35,0.000128809,0,Intermediate 2,14
+Cleanup,0,34,0.000156883,0,Intermediate 2,14
+TypeInference,0,33,9.5617e-05,0,Intermediate 2,14
+Overflow,0,32,7.1316e-05,0,Intermediate 2,14
+Intermediate 2 post,0,0,3.2899e-05,0,Intermediate 2 post,14
+HoistInstruction,0,0,5.9744e-05,0,Intermediate 2 post,14
+LoopInvariant,0,0,4.5368e-05,0,Intermediate 2 post,14
+Cleanup FS,0,0,3.1454e-05,0,Cleanup FS,14
+CleanupFramestate,1,0,3.6552e-05,0,Cleanup FS,14
+CleanupCheckpoints,0,0,4.0234e-05,0,Cleanup FS,14
+Final,0,119,3.1489e-05,0,Final,14
+DotDotDots,0,118,3.5036e-05,0,Final,14
+EagerCalls,0,117,4.5169e-05,0,Final,14
+MatchCallArgs,0,116,3.5224e-05,0,Final,14
+InlineForcePromises,0,115,3.4163e-05,0,Final,14
+Inline,0,114,3.5127e-05,0,Final,14
+OptimizeContexts,0,113,4.629e-05,0,Final,14
+DelayInstr,0,112,6.59e-05,0,Final,14
+ForceDominance,0,111,0.000155151,0,Final,14
+ScopeResolution,1,110,0.000649189,0,Final,14
+LoadElision,0,109,6.0916e-05,0,Final,14
+GVN,0,108,0.000191206,0,Final,14
+Constantfold,0,107,0.000110984,0,Final,14
+DeadStoreRemoval,0,106,0.000236408,0,Final,14
+Inline,0,105,3.6347e-05,0,Final,14
+OptimizeContexts,0,104,4.5968e-05,0,Final,14
+OptimizeVisibility,0,103,5.6055e-05,0,Final,14
+OptimizeAssumptions,0,102,0.000120129,0,Final,14
+Cleanup,1,101,0.000204215,0,Final,14
+ElideEnv,0,100,7.8049e-05,0,Final,14
+DelayEnv,0,99,3.3246e-05,0,Final,14
+DelayInstr,0,98,7.4196e-05,0,Final,14
+Cleanup,0,97,0.000139297,0,Final,14
+OptimizeVisibility,0,96,5.8593e-05,0,Final,14
+OptimizeAssumptions,0,95,0.000115094,0,Final,14
+Cleanup,0,94,0.000140785,0,Final,14
+TypeInference,0,93,8.7789e-05,0,Final,14
+Overflow,0,92,6.2242e-05,0,Final,14
+ElideEnvSpec,0,91,8.8953e-05,0,Final,14
+CleanupCheckpoints,0,90,4.0193e-05,0,Final,14
+Final post,0,0,2.8616e-05,0,Final post,14
+HoistInstruction,0,0,4.3878e-05,0,Final post,14
+LoopInvariant,0,0,4.0994e-05,0,Final post,14
+Constantfold,0,0,8.5343e-05,0,Final post,14
+Cleanup,0,0,0.000144226,0,Final post,14
+CleanupCheckpoints,0,0,3.6563e-05,0,Final post,14
+done,0,0,2.8082e-05,0,done,14

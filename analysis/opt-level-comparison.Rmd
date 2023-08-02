@@ -54,9 +54,11 @@ comp_levels <- left_join(base_level, opt_levels[[2]], by="filename", suffix=past
 
 ## Comparison
 
+## Execution times
+
 ```{r execution_times, fig.width=15, fig.height=9}
 execution_times <- select(comp_levels, filename, starts_with("execution_time")) %>%
-    arrange(desc(execution_time_opt1),desc(execution_time_opt2)) %>% 
+    arrange(desc(execution_time_opt0),desc(execution_time_opt1)) %>% 
   pivot_longer(!filename, names_to="opt level", values_to="values") %>%
   mutate(filename = basename(filename)) 
 ggplot(execution_times) + 
@@ -71,7 +73,7 @@ Let's zoom on the quick ones:
 ```{r small_exec_times, fig.width=15, fig.height=9}
 small_execution_times <- select(comp_levels, filename, starts_with("execution_time")) %>%
   filter(execution_time_opt0 <= 10) %>%
-  arrange(desc(execution_time_opt1),desc(execution_time_opt2)) %>% 
+  arrange(desc(execution_time_opt0),desc(execution_time_opt1)) %>% 
   pivot_longer(!filename, names_to="opt level", values_to="values") %>%
   mutate(filename = basename(filename)) 
 
@@ -81,4 +83,49 @@ ggplot(small_execution_times) +
   labs(x = "file", y = "Exec time (s)") 
 ```
 
+### Compilation times
 
+
+```{r compilation_times, fig.width=15, fig.height=9}
+# total_measured-time has a misleading name: it is actually the compilation time
+compilation_times <- select(comp_levels, filename, starts_with("total_measured_time")) %>% 
+    arrange(desc(total_measured_time_opt0),desc(total_measured_time_opt1)) %>% 
+  pivot_longer(!filename, names_to="opt level", values_to="values") %>%
+  mutate(filename = basename(filename)) 
+ggplot(compilation_times) + 
+  geom_col(aes(x=fct_reorder2(filename, `opt level`, values), y=values, fill=`opt level`), position="dodge") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 0.5, vjust = 0.5)) +
+  labs(x = "file", y = "Comp. time (s)") +
+  scale_y_continuous(trans="log1p")
+```
+
+Again, we are zooming:
+
+
+
+```{r small_compilation_times, fig.width=15, fig.height=9}
+small_compilation_times <- select(comp_levels, filename, starts_with("total_measured_time")) %>%
+  filter(total_measured_time_opt0 <= 1) %>%
+  arrange(desc(total_measured_time_opt0),desc(total_measured_time_opt1)) %>% 
+  pivot_longer(!filename, names_to="opt level", values_to="values") %>%
+  mutate(filename = basename(filename)) 
+
+ggplot(small_compilation_times) + 
+  geom_col(aes(x=fct_reorder2(filename, `opt level`, values), y=values, fill=`opt level`), position="dodge") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 0.5, vjust = 0.5)) +
+  labs(x = "file", y = "Comp. time (s)") 
+```
+
+### Ratio compiled time vs total execution time
+
+```{r ratio_times, fig.width=15, fig.height=9}
+ratio_times <- select(comp_levels, filename, starts_with("compiled_time_pc")) %>% 
+    arrange(compiled_time_pc_opt0,compiled_time_pc_opt1) %>% 
+  pivot_longer(!filename, names_to="opt level", values_to="values") %>%
+  mutate(filename = basename(filename)) 
+ggplot(ratio_times) + 
+  geom_col(aes(x=fct_reorder2(filename, `opt level`, values, .desc = FALSE), y=values, fill=`opt level`), position="dodge") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 0.5, vjust = 0.5)) +
+  labs(x = "file", y = "% comp./exec. ") +
+  scale_y_continuous(trans="log1p")
+```
