@@ -1,0 +1,82 @@
+---
+title: "Performance passes"
+author: "Pierre Donat-Bouillud"
+date: "2023-07-17"
+output: html_document
+params:
+  profiles_path: "precise-profiles"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(readr)
+library(stringr)
+library(ggplot2)
+library(forcats)
+library(DT)
+library(purrr)
+
+here::i_am("analysis/perf-passes.Rmd")
+
+library(here)
+```
+
+# Data loading
+
+
+```{r}
+profiles_path <- list.files(path=here(params$profiles_path), pattern="passes.*\\.csv")
+
+profiles <- map(here(file.path(params$profiles_path, profiles_path)), read_csv)
+```
+
+# Analysis
+
+How many passes do actual change?
+
+```{r}
+nb_not_changed <- function(df) {
+  df %>% count(changed) %>% mutate(pc = n / sum(n) * 100)
+}
+
+pc_changed <- map(profiles, nb_not_changed)
+names(pc_changed) <- profiles_path
+pc_changed <- bind_rows(pc_changed, .id= "file")
+pc_changed
+```
+
+# Roughly, phases that change
+
+How many phases do not perform any changes? In at least one run.
+
+```{r}
+phase_change <- function(df) {
+  df %>%  group_by(run, phase) %>% summarize(changed = sum(changed) > 0) %>% group_by(phase) %>% summarize(changed = any(changed))
+}
+
+phase_changed <- map(profiles, phase_change)
+names(phase_changed) <- profiles_path
+phase_changed <- bind_rows(phase_changed, .id= "file")
+phase_changed
+```
+
+Phase `Intermediate 2 post` seems to make changes much less often.
+
+```{r}
+phase_changed %>% group_by(phase) %>% summarize(nb_changed = sum(changed)) %>% arrange(desc(nb_changed))
+```
+
+# Changing passes per phase
+
+```{r}
+nb_phase_change <- function(df) {
+  df %>% group_by(phase) %>% summarize(changed = sum(changed), n = n()) %>% mutate(pc = changed / n) 
+}
+
+nb_phase_changed <- map(profiles, nb_phase_change)
+names(nb_phase_changed) <- profiles_path
+nb_phase_changed <- bind_rows(nb_phase_changed, .id= "file")
+nb_phase_changed %>% group_by(phase) %>% summarize(changed = sum(changed), n = sum(n)) %>% mutate(pc = changed / n * 100) %>% arrange(desc(pc))
+```

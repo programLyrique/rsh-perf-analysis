@@ -50,7 +50,7 @@ mean_pc %>%  knitr::kable(digits = 1)
 ggplot(mean_pc) +
   geom_col(aes(x=fct_reorder(Phase, AvgPc), y=AvgPc)) +
   coord_flip() +
-  labs(y="%")
+  labs(y="%", x="Pass")
 ```
 
 ## Weighted rank aggregation
