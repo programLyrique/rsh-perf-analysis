@@ -6,13 +6,14 @@ get_metrics <- function(rfile_path) {
 }
 
 
-process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0)) {
+process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0), nb_outer_iter = 10, nb_inner_iter = 20) {
     current_dir <- getwd()
 
     cat("Profile ", rfile_path, " in ", current_dir, " with profile to be written in ", profile_dir, "with_harness=", with_harness, "banned_phases= ", banned_passes, "\n")
 
     # profile the file the "incomplete final line found" warning
     profile_path <- file.path(normalizePath(profile_dir), paste0("profile-phase-", basename(tools::file_path_sans_ext(rfile_path))))
+    stdout_path <- file.path(normalizePath(profile_dir), paste0("stdout-", basename(tools::file_path_sans_ext(rfile_path))))
     passes_path <- file.path(normalizePath(profile_dir), paste0("passes-", basename(tools::file_path_sans_ext(rfile_path)), ".csv"))
 
 
@@ -29,7 +30,7 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banne
     setwd(dirname(rfile_path))
 
     args <- if (with_harness) {
-        c("-q", "-f harness.r", paste0("--args ", rfile_name, " 10 20"))
+        c("-q", "-f harness.r", paste("--args ", rfile_name, nb_outer_iter, nb_inner_iter))
     } else {
         c("-q", paste0("-f ", rfile_name))
     }
@@ -47,7 +48,7 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banne
 
     start_time <- Sys.time()
     res <- system2(r_path, args,
-        stdout = FALSE,
+        stdout = stdout_path,
         env = env
     )
     end_time <- Sys.time()
@@ -68,8 +69,8 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banne
         return(tibble())
     }
 
-    parsed_line <- str_match(lines[[6]], "\\s*Timers \\((\\d+\\.?\\d*) (secs|mins) [^\\)]*\\):")
-    sec_convert <- if (parsed_line[, 3] == "mins") {
+    parsed_line <- str_match(lines[[6]], "\\s*Timers \\((\\d+\\.?\\d*) (secs|min) [^\\)]*\\):")
+    sec_convert <- if (parsed_line[, 3] == "min") {
         60
     } else {
         1

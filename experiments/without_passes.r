@@ -5,9 +5,18 @@ library(dplyr)
 library(purrr)
 library(readr)
 
+browseOnce <- function() {
+    old <- getOption("error")
+    function() {
+        options(error = old)
+        browser()
+    }
+}
+options(error = browseOnce())
 
 
 passes <- c(
+    "Baseline", # not a real pass so won't desactivate any pass
     "ForceDominance", "ScopeResolution", "DeadStoreRemoval",
     "OptimizeAssumptions",
     "Cleanup", "Constantfold", "GVN", "ElideEnvSpec",
@@ -17,6 +26,8 @@ passes <- c(
     "CleanupCheckpoints", "DelayEnv", "DotDotDots", "MatchCallArgs",
     "InlineForcePromises", "TypefeedbackCleanup"
 )
+
+# ~/RBenchmarking/Benchmarks/RealThing/ ../banned-passes/ harness
 
 args <- commandArgs(trailingOnly = TRUE)
 
@@ -53,12 +64,23 @@ files_to_run <- discard(rfiles_path, function(rfile) {
     basename(rfile) == "harness.r"
 })
 
+
+extract_profiles <- function(pass_name) {
+    profile_pass_dir <- file.path(profile_dir, pass_name)
+    dir.create(profile_pass_dir, showWarnings = FALSE)
+    map(files_to_run, process_profile, profile_pass_dir, harness != "", banned_passes = if (pass_name == "Baseline") {
+        character(0)
+    } else {
+        pass_name
+    }, nb_inner_iter = 10, .progress = TRUE)
+}
+
 runs <- list()
 for (i in seq_along(passes)) {
-    extracted <- map(files_to_run, process_profile, profile_dir, harness != "", banned_passes = passes[[i]], .progress = TRUE)
-
-    runs[passes[[i]]] <- bind_rows(extracted)
+    extracted <- extract_profiles(passes[[i]])
+    runs[[passes[[i]]]] <- bind_rows(extracted)
 }
+
 
 profiles <- bind_rows(runs, .id = "banned_pass")
 
