@@ -6,7 +6,7 @@ get_metrics <- function(rfile_path) {
 }
 
 
-process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0), nb_outer_iter = 10, nb_inner_iter = 20) {
+process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0), nb_outer_iter = 10, nb_inner_iter = 20, from_iteration = min(6, nb_outer_iter)) {
     current_dir <- getwd()
 
     cat("Profile ", rfile_path, " in ", current_dir, " with profile to be written in ", profile_dir, "with_harness=", with_harness, "banned_phases= ", banned_passes, "\n")

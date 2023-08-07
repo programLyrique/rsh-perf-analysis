@@ -72,7 +72,7 @@ extract_profiles <- function(pass_name) {
         character(0)
     } else {
         pass_name
-    }, nb_inner_iter = 10, .progress = TRUE)
+    }, nb_outer_iter = 15, nb_inner_iter = 10, .progress = TRUE)
 }
 
 runs <- list()
