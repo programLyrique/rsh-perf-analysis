@@ -1,0 +1,70 @@
+---
+title: "Banning passes"
+author: "Pierre Donat-Bouillud"
+date: "2023-08-04"
+output: html_document
+params:
+  profiles_path: "banned-passes"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(readr)
+library(stringr)
+library(ggplot2)
+library(forcats)
+library(DT)
+library(purrr)
+
+here::i_am("analysis/banning-passes.Rmd")
+
+library(here)
+```
+
+# Data loading
+
+
+```{r}
+profiles <- read_csv(here(file.path(params$profiles_path, "profiles.csv"))) %>% mutate(filename = basename(filename))
+```
+
+# Execution times
+
+```{r, fig.width=15, fig.height=18}
+profiles %>% select(banned_pass, filename, execution_time)  %>%
+  ggplot() + geom_col(aes(x= filename, y = execution_time)) + 
+  theme(axis.text.x = element_text(angle = 30, hjust = 0.5, vjust = 0.5)) +
+  labs(x = "file", y = "Exec time (s)") +
+  #scale_y_continuous(trans="log1p") +
+  facet_wrap(~banned_pass, scales = "free_x")
+```
+
+
+We also compare the slowest profile file: `volcano.r`
+
+```{r}
+profiles |> filter(filename == "volcano.r") |> select(banned_pass, filename, execution_time) |> arrange(desc(execution_time)) |> mutate(slow_down = execution_time / filter(pick(banned_pass, execution_time), banned_pass == "Baseline")$execution_time[[1]]) |> knitr::kable(digits=2, width=10)
+```
+
+We can also average the execution time for each set of files with one given banned pass:
+
+```{r}
+profiles |>  select(banned_pass, filename, execution_time) |> group_by(banned_pass) |> summarize(exec_time = mean(execution_time))  |> arrange(desc(exec_time))  |> mutate(slow_down = exec_time / filter(pick(banned_pass, exec_time), banned_pass == "Baseline")$exec_time[[1]]) |> knitr::kable(digits=2, width=10)
+```
+
+We can also remove the optimization times from the total execution time:
+
+```{r}
+profiles |> select(banned_pass, filename, execution_time, total_measured_time) |> mutate(exec_time = execution_time - total_measured_time) |> group_by(banned_pass) |> summarize(exec_time = mean(exec_time)) |> arrange(desc(exec_time)) |> mutate(slow_down = exec_time / filter(pick(banned_pass, exec_time), banned_pass == "Baseline")$exec_time[[1]]) |> knitr::kable(digits=2, width=10)
+```
+
+
+# Compilation times
+
+```{r}
+profiles |>  select(banned_pass, filename, total_measured_time) |> group_by(banned_pass) |> summarize(opt_time = mean(total_measured_time))  |> arrange(desc(opt_time))  |> mutate(slow_down = opt_time / filter(pick(banned_pass, opt_time), banned_pass == "Baseline")$opt_time[[1]]) |> knitr::kable(digits=2, width=10)
+```
+
+# Ratio
