@@ -5,8 +5,31 @@ get_metrics <- function(rfile_path) {
     list(nb_lines = length(lines), nb_loops = sum(str_detect(lines, "while|for|repeat")))
 }
 
+get_peak_performance <- function(rfile_path, profile_dir, from_iteration = 6) {
+    stdout_path <- file.path(normalizePath(profile_dir), paste0("stdout-", basename(tools::file_path_sans_ext(rfile_path))))
+    lines <- readLines(stdout_path)
 
-process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0), nb_outer_iter = 10, nb_inner_iter = 20, from_iteration = min(6, nb_outer_iter)) {
+    # the beginning of the output is the commands that were given to R
+    # we need to reach `> run(commandArgs(trailingOnly=TRUE))`
+
+    runCommand_start <- Position(function(x) {
+        startsWith(x, "> run(commandArgs(trailingOnly=TRUE))")
+    }, lines, right = TRUE, nomatch = 0)
+
+    iterations_perf <- lines[(runCommand_start + 1):length(lines)]
+
+    runtimes <- stringr::str_match_all(iterations_perf, "runtime: ([0-9]+)us")[[1]][, 2] |> as.integer()
+
+    if(from_iteration > length(runtimes)) {
+        from_iteration <- 1
+    }
+
+    mean(runtimes[from_iteration:length(runtimes)])
+}
+
+
+
+process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0), nb_outer_iter = 10, nb_inner_iter = 20, from_iteration = max(nb_outer_iter, 6)) {
     current_dir <- getwd()
 
     cat("Profile ", rfile_path, " in ", current_dir, " with profile to be written in ", profile_dir, "with_harness=", with_harness, "banned_phases= ", banned_passes, "\n")
@@ -97,3 +120,5 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banne
     }
     df
 }
+
+
