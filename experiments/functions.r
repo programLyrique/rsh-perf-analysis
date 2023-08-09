@@ -5,8 +5,9 @@ get_metrics <- function(rfile_path) {
     list(nb_lines = length(lines), nb_loops = sum(str_detect(lines, "while|for|repeat")))
 }
 
-get_peak_performance <- function(rfile_path, profile_dir, from_iteration = 6) {
-    stdout_path <- file.path(normalizePath(profile_dir), paste0("stdout-", basename(tools::file_path_sans_ext(rfile_path))))
+
+
+get_peak_performance <- function(stdout_path, from_iteration = 6) {
     lines <- readLines(stdout_path)
 
     # the beginning of the output is the commands that were given to R
@@ -27,7 +28,10 @@ get_peak_performance <- function(rfile_path, profile_dir, from_iteration = 6) {
     mean(runtimes[from_iteration:length(runtimes)])
 }
 
-
+get_peak_performance_from_file <- function(rfile_path, profile_dir, from_iteration = 6) {
+    stdout_path <- file.path(normalizePath(profile_dir), paste0("stdout-", basename(tools::file_path_sans_ext(rfile_path))))
+    get_peak_performance(stdout_path)
+}
 
 process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0), nb_outer_iter = 10, nb_inner_iter = 20, from_iteration = max(nb_outer_iter, 6)) {
     current_dir <- getwd()
@@ -85,6 +89,9 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banne
     # get some metrics about the file
     metrics <- get_metrics(rfile_path)
 
+    # get peak performances from the measurement of perf for each outer iteration
+    peak_avg_exec_time <- get_peak_performance(stdout_path, 6) # take iterations 6 to 15
+
     # Read the result of profiling
     lines <- readLines(profile_path)
 
@@ -108,7 +115,8 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banne
         nb_lines = metrics$nb_lines,
         nb_loops = metrics$nb_loops,
         execution_time = end_time - start_time,
-        total_measured_time = total_measured_time
+        total_measured_time = total_measured_time,
+        peak_execution_time = peak_avg_exec_time
     )
     for (line in lines) {
         res <- str_match(line, "\\s*([^:\\s]+): ([^\\t]+)\\t(\\d+\\.?\\d*(?:e-\\d+)?)")
