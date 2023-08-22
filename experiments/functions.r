@@ -19,9 +19,11 @@ get_peak_performance <- function(stdout_path, from_iteration = 6) {
 
     iterations_perf <- lines[(runCommand_start + 1):length(lines)]
 
-    runtimes <- stringr::str_match_all(iterations_perf, "runtime: ([0-9]+)us")[[1]][, 2] |> as.integer()
+    runtimes <- stringr::str_match_all(iterations_perf, "runtime: ([0-9]+)us")
+    runtimes <- do.call(rbind, runtimes)
+    runtimes <- as.integer(runtimes[, 2])
 
-    if(from_iteration > length(runtimes)) {
+    if (from_iteration > length(runtimes)) {
         from_iteration <- 1
     }
 
@@ -33,7 +35,8 @@ get_peak_performance_from_file <- function(rfile_path, profile_dir, from_iterati
     get_peak_performance(stdout_path)
 }
 
-process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0), nb_outer_iter = 10, nb_inner_iter = 20, from_iteration = max(nb_outer_iter, 6)) {
+# subdir=TRUE if benchmarks are placed in subdirectories
+process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banned_passes = character(0), nb_outer_iter = 10, nb_inner_iter = 20, from_iteration = max(nb_outer_iter, 6), subdir = FALSE) {
     current_dir <- getwd()
 
     cat("Profile ", rfile_path, " in ", current_dir, " with profile to be written in ", profile_dir, "with_harness=", with_harness, "banned_phases= ", banned_passes, "\n")
@@ -47,14 +50,21 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banne
     r_path <- file.path(r_dir, "R")
 
     rfile_name <- if (with_harness) {
-        basename(tools::file_path_sans_ext(rfile_path))
+        base <- basename(tools::file_path_sans_ext(rfile_path))
+        if (subdir) {
+            file.path(basename(dirname(rfile_path)), base)
+        }
     } else {
         basename(rfile_path)
     }
 
-    # We set the current dir to where the R file is
+    # We set the current dir to where the harness is
     # in order for files it imports to be relative to it
-    setwd(dirname(rfile_path))
+    setwd(if (subdir) {
+        dirname(dirname(rfile_path))
+    } else {
+        dirname(rfile_path)
+    })
 
     args <- if (with_harness) {
         c("-q", "-f harness.r", paste("--args ", rfile_name, nb_outer_iter, nb_inner_iter))
@@ -128,5 +138,3 @@ process_profile <- function(rfile_path, profile_dir, with_harness = FALSE, banne
     }
     df
 }
-
-
